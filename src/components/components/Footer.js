@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
+            <div className="container">
             <div className="flex flex-row justify-between bg-[#376AED] text-white">
                 <div className="ml-40 mt-36 mb-36 text-xl">
                     <div className="mb-14">
@@ -48,6 +49,7 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )
