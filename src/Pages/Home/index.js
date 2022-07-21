@@ -1,5 +1,5 @@
-import Navbar from "../../components/Navbar"
-import Footer from "../../components/Footer"
+import Navbar from "../../components/components/Navbar"
+import Footer from "../../components/components/Footer"
 import bgMain from "../../components/images/kakek.png"
 import { Link } from "react-router-dom";
 import PopularTags from "./components/popularTags";
