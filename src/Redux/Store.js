@@ -1,7 +1,7 @@
 import { applyMiddleware, createStore } from 'redux'
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
-import rootReducer from './reducers'
+import rootReducer from './Reducers'
 import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 
@@ -20,3 +20,4 @@ export {
   store,
   persistor
 }
+

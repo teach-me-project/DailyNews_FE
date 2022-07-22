@@ -23,20 +23,24 @@ const LoginError = (error) => {
 export const AuthLogin = (formData) => {
     return (dispatch) => {
         dispatch(LoginRequest())
-        axios({
-            method: "POST",
-            url: "http://localhost:3000/api/v1/auth/login",
-            data: {
-                email: formData.email,
-                password: formData.password
-            }
-        })
-        .then ((res) => {
-            dispatch(LoginSucces(res.data.data))
-        })
-        .catch((err)=> {
-            dispatch(LoginError(err.response.data))
-        })
+        // axios({
+        //     method: "POST",
+        //     url: "http://localhost:3000/api/v1/auth/login",
+        //     data: {
+        //         email: formData.email,
+        //         password: formData.password
+        //     }
+        // })
+        // .then ((res) => {
+            //     dispatch(LoginSucces(res.data.data))
+            // })
+            // .catch((err)=> {
+                //     dispatch(LoginError(err.response.data))
+                // })
+                dispatch(LoginSucces({
+                    email: 'test@gmail.com',
+                    password: 'test1'
+                }))
     }
 }
 
