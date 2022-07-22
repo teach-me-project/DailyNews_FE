@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const PopularTags =()=>{
     return(
         <>
-        <div className="ml-20 mr-20">
+        <div className="ml-20 mr-20 mt-10">
                     <div className="flex flex-row justify-between mb-4 text-2xl">
                         <h3 className="font-bold text-2xl">
                             Popular Tags
@@ -14,7 +14,7 @@ const PopularTags =()=>{
                             </h3>
                         </Link>
                     </div>
-                    <div className="flex flex-row text-[#376AED] mb-4">
+                    <div className="flex flex-row text-[#376AED] mb-4 mr-20 shrink">
                         <p className="rounded-md bg-[#EFF4FF] p-1">
                             #ladygaga
                         </p>

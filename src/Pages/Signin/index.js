@@ -49,10 +49,13 @@ const Signin = () => {
                         <p className="mb-5">
                             already have account?
                         </p> <hr />
-                        <button type="button"
-                            className="inline-block w-[400px] font-['Mulish'] h-12 py-2.5 bg- text-white font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#0D253C] active:shadow-lg transition duration-150 ease-in-out">
-                            Sign Up Now
-                        </button>
+                        <Link to={'/signup'}>
+                            <button type="button"
+                                className="inline-block w-[400px] font-['Mulish'] h-12 py-2.5 bg- text-white font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#0D253C] active:shadow-lg transition duration-150 ease-in-out">
+                                Sign Up Now
+                            </button>
+                        </Link>
+
                         <Link to={'#'}>
                             <p className="text-black underline mt-12 font-semibold">
                                 Back to Home Page

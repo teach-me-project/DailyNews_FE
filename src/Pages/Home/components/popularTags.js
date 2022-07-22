@@ -10,7 +10,7 @@ const PopularTags = () => {
         <>
             <div>
                 {/* categories */}
-                <div className="ml-20 mr-20">
+                <div className="ml-20 mr-20 mt-10">
                     <div className="flex flex-row justify-between mb-4 text-2xl">
                         <h3 className="font-bold text-2xl">
                             Popular Tags
@@ -133,9 +133,8 @@ const PopularTags = () => {
                                 More
                             </h3>
                         </div>
-
                         <div className="flex flex-row">
-                            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl">
+                            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
                                 <div className="flex flex-row items-center">
                                     <img src={covid} />
                                     <div className="flex flex-col ml-9">
@@ -161,7 +160,7 @@ const PopularTags = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] ml-6 shadow-2xl">
+                            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] ml-6 shadow-2xl mr-2">
                                 <div className="flex flex-row items-center">
                                     <img src={covid} />
                                     <div className="flex flex-col ml-9">
@@ -232,8 +231,123 @@ const PopularTags = () => {
                 <div>
                     <img className="w-[671px] m-28" src={video} />
                 </div>
-            </div>            
+            </div>
+
+            <div className="ml-20">
+                <p className="font-bold text-2xl mb-4">
+                    Last News
+                </p>
+                <div className="flex flex-row">
+                    <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+                        <div className="flex flex-row items-center">
+                            <img src={covid} />
+                            <div className="flex flex-col ml-9">
+                                <p className="text-[#376AED] font-semibold text-xl">
+                                    COVID-19
+                                </p>
+                                <p className="text-black font-semibold mt-3">
+                                    Why corona never ends?<br /> Let’s see how its facts
+                                </p>
+                                <div className="flex flex-row mt-14">
+                                    <div className="flex flex-row">
+                                        <img className="mr-1" src={finger} />
+                                        <p>2.1k</p>
+                                    </div>
+                                    <div className="ml-3.5 flex flex-row">
+                                        <img className="mr-1" src={timer} />
+                                        <p>3m ago</p>
+                                    </div>
+                                    <div className="ml-3 flex flex-row">
+                                        <img src={saves} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+                        <div className="flex flex-row items-center">
+                            <img src={covid} />
+                            <div className="flex flex-col ml-9">
+                                <p className="text-[#376AED] font-semibold text-xl">
+                                    COVID-19
+                                </p>
+                                <p className="text-black font-semibold mt-3">
+                                    Why corona never ends?<br /> Let’s see how its facts
+                                </p>
+                                <div className="flex flex-row mt-14">
+                                    <div className="flex flex-row">
+                                        <img className="mr-1" src={finger} />
+                                        <p>2.1k</p>
+                                    </div>
+                                    <div className="ml-3.5 flex flex-row">
+                                        <img className="mr-1" src={timer} />
+                                        <p>3m ago</p>
+                                    </div>
+                                    <div className="ml-3 flex flex-row">
+                                        <img src={saves} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+                        <div className="flex flex-row items-center">
+                            <img src={covid} />
+                            <div className="flex flex-col ml-9">
+                                <p className="text-[#376AED] font-semibold text-xl">
+                                    COVID-19
+                                </p>
+                                <p className="text-black font-semibold mt-3">
+                                    Why corona never ends?<br /> Let’s see how its facts
+                                </p>
+                                <div className="flex flex-row mt-14">
+                                    <div className="flex flex-row">
+                                        <img className="mr-1" src={finger} />
+                                        <p>2.1k</p>
+                                    </div>
+                                    <div className="ml-3.5 flex flex-row">
+                                        <img className="mr-1" src={timer} />
+                                        <p>3m ago</p>
+                                    </div>
+                                    <div className="ml-3 flex flex-row">
+                                        <img src={saves} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+                        <div className="flex flex-row items-center">
+                            <img src={covid} />
+                            <div className="flex flex-col ml-9">
+                                <p className="text-[#376AED] font-semibold text-xl">
+                                    COVID-19
+                                </p>
+                                <p className="text-black font-semibold mt-3">
+                                    Why corona never ends?<br /> Let’s see how its facts
+                                </p>
+                                <div className="flex flex-row mt-14">
+                                    <div className="flex flex-row">
+                                        <img className="mr-1" src={finger} />
+                                        <p>2.1k</p>
+                                    </div>
+                                    <div className="ml-3.5 flex flex-row">
+                                        <img className="mr-1" src={timer} />
+                                        <p>3m ago</p>
+                                    </div>
+                                    <div className="ml-3 flex flex-row">
+                                        <img src={saves} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </>
+
     )
 
 }
