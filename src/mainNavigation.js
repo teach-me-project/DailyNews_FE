@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Signup, Signin, Home, Forgot} from "./Pages";
 import Articles from "./Pages/Article";
 import WriteArticle from "./Pages/WriteArticle";
 
