@@ -3,6 +3,8 @@ import { Signup, Signin, Home, Forgot} from "./Pages";
 import Articles from "./Pages/Article";
 import WriteArticle from "./Pages/WriteArticle";
 
+import { Signup, Signin, Home, Forgot, Categoryy } from "./Pages";
+import ArticleCategory from "./components/components/ArticleCategory";
 
 const MainNavigation = () => {
   return (
@@ -15,6 +17,11 @@ const MainNavigation = () => {
           <Route path="/forgot" element={<Forgot />}></Route>   
           <Route path="/article" element={<Articles />}></Route>
           <Route path="/write-article" element={<WriteArticle />}></Route>
+          <Route path="/forgot" element={<Forgot />}></Route>
+          <Route path="/Category" element={<Categoryy />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/pop" element={<ArticleCategory />}></Route>
+          {/* Ade : route pop untuk route percobaan new feature */}
         </Routes>
       </BrowserRouter>
     </>
