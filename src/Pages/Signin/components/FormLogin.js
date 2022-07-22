@@ -5,12 +5,12 @@ import twitter from '../../../components/images/Twitter.svg'
 import { Link, useNavigate } from "react-router-dom";
 import login from '../../../components/images/login-vector.jpg';
 import { useEffect, useState } from 'react';
-import { useDispatch, useSelecetor } from 'react-redux';
-import { AuthLogin } from "../../redux/actions/Auth"
+import { useDispatch, useSelector } from 'react-redux';
+import { AuthLogin } from "../../../Redux/Actions/Auth"
 
 
 const FormLogin = () => {
-  const { data, error, loading, isLogin } = useSelecetor((state) => state.auth)
+  const { data, error, loading, isLogin } = useSelector((state) => state.auth)
   const dispatch = useDispatch()
     let navigate = useNavigate()
     const [formLogin, setFormLogin] = useState({
