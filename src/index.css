@@ -1,11 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* color theme {
+  rgba(56, 128, 135, 1)
+  rgba(111, 179, 184, 1)
+  rgba(186, 223, 231, 1)
+  rgba(194, 237, 206, 1)
+  rgba(246, 246, 242, 1)
+} */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-style: normal;
+  font-family: 
+  'Mulish', sans-serif; 
+  /* -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,3 +26,248 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-left {
+  width: 44%;
+}
+
+.img-left {
+  position: absolute;
+  width: 44%;
+  height: 100vh;
+}
+
+.content-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(225deg, rgba(56, 128, 135, 0.9), rgba(186, 223, 231, 0.8)) ;
+  z-index: 2;
+  height: 100vh;
+}
+
+.content-img h1{
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 98px;
+  color: #fff;
+  z-index: 5;
+}
+
+.content-img h2{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 33px;
+  color: #fff;
+  z-index: 5;
+}
+
+.confirmation-account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.confirmation-account h2{
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 30px;
+  color: #fff;
+  z-index: 5;
+}
+
+.btn-login {
+  background-color: rgba(56, 128, 135, 1);
+  color: #fff;
+  cursor: pointer;
+  width: 50%;
+  height: 8%;
+  border-radius: 7px;
+}
+
+.btn-login:active {
+  background-color: #103457;
+}
+
+.text-footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+  font-weight: 500px;
+  size: 15px;
+  line-height: 33px;
+  margin-top: 15%;
+}
+
+.text-left {
+  margin-right: 17%;
+}
+
+.text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-login {
+  display: flex;
+  margin-left: 7%;
+  z-index: 5;
+}
+
+.form-login-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: 
+  #fff;
+  margin-top: 15%;
+
+}
+
+.header-mobile {
+  color :#388087;
+  font-style: bold;
+  font-size: larger;
+  font-weight: 900;
+  padding-bottom: 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.login-mobile {
+  color :#388087;
+  font-style: bold;
+  font-weight: 900;
+  margin: 5%;
+  cursor: pointer;
+}
+
+.login-mobile hr:hover {
+  display: flex;
+  border: 2px solid #388087;
+  border-radius: 3px;  
+}
+
+.card-login {
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #388087;
+}
+
+.image-login img {
+  height: 15vh;
+}
+
+.header-card {
+  color: #388087;
+  font-weight: 900;
+  padding: 0 0 7% 0;
+}
+
+.card-login h2 {
+  color:#388087;
+  font-weight: 900;
+  padding: 0 0 7% 0;
+}
+
+.footer-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-mobile-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 14vw;
+  background-color: aliceblue;
+}
+
+.footer-mobile-logo img {
+  width: 2.5vw;
+  height: auto;
+}
+
+form input {
+  border-radius: 10px;
+  padding: 5% 0% 5% 0%;
+  box-shadow: 0px 0px 5px #388087;
+  font-size: medium;
+  margin: 5% 0 5% 0;
+}
+
+.card-login a {
+  color: #388087;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+form ::placeholder {
+  padding-left: 4%;
+  font-size: 13px;
+}
+
+.btn-login-mobile {
+  border-radius: 4px;
+  background-color: #388087;
+  font-size: small;
+  color: #fff;
+  padding: 3% 20%;
+  cursor: pointer;
+  margin: 5%;
+}
+
+.footer-mobile h1 {  
+  font-size: 12px;
+  font-weight: 700;
+  color: #388087;
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+
+.btn-login-mobile:hover {
+  background-color: rgb(53, 122, 129, 0.8);
+}
+
+/* ---- Responsive ---- */
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cover-left {
+    display: none;
+  }
+  .form-login {
+    display: none;
+  }
+  .form-login-mobile {
+    display: flex;
+  }
+} 
