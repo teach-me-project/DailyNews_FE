@@ -18,7 +18,7 @@ const WriteArticle = () => {
                 </div>
                 <Link to={''} >
                     <div className="flex flex-row items-center mb-10 ml-20 mt-0">
-                        <img className="w-3 mr-5" src={arrow} />
+                        <img className="w-3 mr-5" src={arrow} alt=''/>
                         <p className="font-semibold items-center font-xl">Back</p>
                     </div>
                 </Link>
@@ -49,11 +49,11 @@ const WriteArticle = () => {
                         </div>
                         <div className="flex flex-row">
                             <p className="mt-5 mb-5 font-bold text-[#388087]">Attacment  : </p>
-                            <img src={image} className="w-7 ml-6" />
-                            <img src={play} className="w-7 ml-6" />
-                            <img src={align} className="w-7 ml-6" />
-                            <img src={link} className="w-7 ml-6" />
-                            <img src={scale} className="w-7 ml-6" />
+                            <img src={image} className="w-7 ml-6" alt=''/>
+                            <img src={play} className="w-7 ml-6" alt=''/>
+                            <img src={align} className="w-7 ml-6" alt=''/>
+                            <img src={link} className="w-7 ml-6" alt=''/>
+                            <img src={scale} className="w-7 ml-6" alt=''/>
                         </div>
                         <textarea className="border border-solid rounded-lg h-44 border-gray-600">
                         </textarea>

@@ -43,18 +43,18 @@ const NavbarLogin = () => {
                     <div className="dropdown dropdown-end">
                         <label tabindex="0" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img src="https://placeimg.com/80/80/people" />
+                                <img src="https://placeimg.com/80/80/people" alt=''/>
                             </div>
                         </label>
                         <ul tabindex="0" className="p-2 mt-3 w-52 shadow menu menu-compact dropdown-content bg-base-100 rounded-box">
                             <li>
-                                <a className="justify-between">
+                                <p className="justify-between">
                                     Profile
                                     <span className="badge">New</span>
-                                </a>
+                                </p>
                             </li>
-                            <Link to='/changepassword'><li><a>Settings</a></li></Link>
-                            <li><a>Logout</a></li>
+                            <Link to='/changepassword'><li><p>Settings</p></li></Link>
+                            <li><p>Logout</p></li>
                         </ul>
                     </div>
                 </div>

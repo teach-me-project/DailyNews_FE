@@ -17,7 +17,7 @@ const Notification = () => {
                 </div>
                 <Link to={''} >
                     <div className="flex flex-row items-center mt-0 mb-10 ml-20">
-                        <img className="mr-5 w-3" src={arrow} />
+                        <img className="mr-5 w-3" src={arrow} alt=''/>
                         <p className="items-center font-semibold font-xl">Home Page</p>
                     </div>
                 </Link>
@@ -25,7 +25,7 @@ const Notification = () => {
 
             <div>
                 <div className="flex flex-row mt-10 mb-10 ml-20">
-                    <img className="w-5" src={Filter} />
+                    <img className="w-5" src={Filter} alt=''/>
                     <p className="ml-5 text-base">Filter</p>
                 </div>
             </div>
@@ -35,7 +35,7 @@ const Notification = () => {
                     <div className="flex flex-col mb-7">
                         <div className="flex flex-row items-center">
                             <div className="w-20 rounded-full">
-                                <img src={ruka} />
+                                <img src={ruka} alt=''/>
                             </div>
                             <div className="flex flex-col">
                                 <p className='ml-5 w-40 text-sm font-bold'>Ruka Just Like Your Post</p>
@@ -46,7 +46,7 @@ const Notification = () => {
                     <div className="flex flex-col mb-7">
                         <div className="flex flex-row items-center">
                             <div className="w-20 rounded-full">
-                                <img src={ruka} />
+                                <img src={ruka} alt=''/>
                             </div>
                             <div className="flex flex-col">
                                 <p className='ml-5 w-40 text-sm font-bold'>Ruka Just Like Your Post</p>
@@ -57,7 +57,7 @@ const Notification = () => {
                     <div className="flex flex-col mb-7">
                         <div className="flex flex-row items-center">
                             <div className="w-20 rounded-full">
-                                <img src={ruka} />
+                                <img src={ruka} alt=''/>
                             </div>
                             <div className="flex flex-col">
                                 <p className='ml-5 w-40 text-sm font-bold'>Ruka Just Like Your Post</p>
@@ -68,7 +68,7 @@ const Notification = () => {
                     <div className="flex flex-col mb-7">
                         <div className="flex flex-row items-center">
                             <div className="w-20 rounded-full">
-                                <img src={ruka} />
+                                <img src={ruka} alt=''/>
                             </div>
                             <div className="flex flex-col">
                                 <p className='ml-5 w-40 text-sm font-bold'>Ruka Just Like Your Post</p>
@@ -79,7 +79,7 @@ const Notification = () => {
                     <div className="flex flex-col mb-7">
                         <div className="flex flex-row items-center">
                             <div className="w-20 rounded-full">
-                                <img src={ruka} />
+                                <img src={ruka} alt=''/>
                             </div>
                             <div className="flex flex-col">
                                 <p className='ml-5 w-40 text-sm font-bold'>Ruka Just Like Your Post</p>
@@ -90,7 +90,7 @@ const Notification = () => {
                     <div className="flex flex-col mb-7">
                         <div className="flex flex-row items-center">
                             <div className="w-20 rounded-full">
-                                <img src={ruka} />
+                                <img src={ruka} alt=''/>
                             </div>
                             <div className="flex flex-col">
                                 <p className='ml-5 w-40 text-sm font-bold'>Ruka Just Like Your Post</p>
@@ -101,7 +101,7 @@ const Notification = () => {
                     <div className="flex flex-col mb-7">
                         <div className="flex flex-row items-center">
                             <div className="w-20 rounded-full">
-                                <img src={ruka} />
+                                <img src={ruka} alt=''/>
                             </div>
                             <div className="flex flex-col">
                                 <p className='ml-5 w-40 text-sm font-bold'>Ruka Just Like Your Post</p>
