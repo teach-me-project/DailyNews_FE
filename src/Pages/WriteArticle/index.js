@@ -29,7 +29,7 @@ const WriteArticle = () => {
                         <div className="w-48 h-72 bg-gray-200 outline-dashed border-[#388087] ">
                             <h1 className="text-center text-7xl my-20">+</h1>
                         </div>
-                        <button className="mt-4 inline-block w-48 font-['Mulish'] h-12 py-2.5 text-white font-bold text-base hover:text-white leading-tight  rounded-lg shadow-md hover:bg-[#164ace] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#0D253C] active:shadow-lg transition duration-150 ease-in-out ">
+                        <button className="mt-4 inline-block w-48 font-['Mulish'] h-12 py-2.5 text-white font-bold text-base hover:text-white leading-tight  rounded-lg shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out ">
                             Choose Cover Photo
                         </button>
                     </div>
