@@ -75,10 +75,10 @@ const FormLogin = () => {
                 already have account?
                 </p> <hr />
                 <button type="button"
-                className="inline-block w-[400px] font-['Mulish'] h-12 py-2.5 bg- text-white font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
+                className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
                 Sign Up Now
                 </button>
-                <Link to={'#'}>
+                <Link to={'/'}>
                     <p className="text-black underline mt-7 font-semibold font-['Mulish']">
                     Back to Home Page
                     </p>

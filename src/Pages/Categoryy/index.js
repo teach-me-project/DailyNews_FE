@@ -1,14 +1,15 @@
 import Navbar from "./../../components/components/Navbar";
 import bgMain from "../../components/images/roman.png";
-// import BgF from "../../components/images/filter.png";
 import SortBy from "../../components/components/Sortby";
 import ArticleCategory from "../../components/components/ArticleCategory";
 import Footer from './../../components/components/Footer';
+import NewFooter from './../../components/components/NewFooter';
+import NavbarLogin from './../../components/components/NavbarLogin';
 
 const Category = () => {
   return (
     <>
-      <Navbar />
+      <NavbarLogin />
       <div className="container">
         <div className="flex flex-col">
           <img className="w-full relative " src={bgMain} alt="" />
@@ -26,7 +27,7 @@ const Category = () => {
       <div className="justify-center text-center"><p className=" my-10 text-[#CDCDCD] font-['Avenir']">Click the category to explore articles</p></div>
       <ArticleCategory/>
       <div className="justify-center text-center"><p className=" my-10 text-[#CDCDCD] font-['Avenir']">We have no category left</p></div>
-      <Footer/>
+      <NewFooter/>
     </>
   );
 };

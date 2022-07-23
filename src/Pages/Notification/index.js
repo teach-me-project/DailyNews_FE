@@ -3,6 +3,7 @@ import ruka from "../../components/images/ruka.jpg"
 import NavbarLogin from "../../components/components/NavbarLogin"
 import arrow from '../../components/images/arrow.svg'
 import Filter from "../../components/images/Filter.svg"
+import NewFooter from '../../components/components/NewFooter';
 
 
 const Notification = () => {
@@ -119,8 +120,8 @@ const Notification = () => {
                     <input className="mb-24 w-5 h-5" type="checkbox" value="Bike" /><br />
                     <input className="mb-24 w-5 h-5" type="checkbox" value="Bike" /><br />
                 </div>
-
             </div>
+            <NewFooter/>
         </>
     )
 }

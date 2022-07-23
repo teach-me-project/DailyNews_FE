@@ -46,7 +46,7 @@ const Signup = () => {
                     </form>
                     <div className="button mb-8">
                         <button type="button"
-                            className="inline-block w-[400px] font-['Mulish'] h-12 py-2.5 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-400 active:shadow-lg transition duration-150 ease-in-out">
+                            className="inline-block w-[400px] font-['Mulish'] h-12 py-2.5 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
                             Sign Up
                         </button>
                     </div>
@@ -61,10 +61,10 @@ const Signup = () => {
                             already have account?
                         </p> <hr />
                         <button type="button"
-                            className="inline-block w-[400px] font-['Mulish'] h-12 py-2.5 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-400 active:shadow-lg transition duration-150 ease-in-out">
+                            className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
                             Login Here
                         </button>
-                        <Link to={'#'}>
+                        <Link to={'/'}>
                         <p className="text-black underline mt-12 font-semibold">
                             Back to Home Page
                         </p>
