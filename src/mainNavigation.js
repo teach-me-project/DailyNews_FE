@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Articles from "./Pages/Article";
 import WriteArticle from "./Pages/WriteArticle";
-
+import Notification from "./Pages/Notification"
 import { Signup, Signin, Home, Forgot, Categoryy } from "./Pages";
 import ArticleCategory from "./components/components/ArticleCategory";
 
@@ -20,6 +20,7 @@ const MainNavigation = () => {
           <Route path="/Category" element={<Categoryy />}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/pop" element={<ArticleCategory />}></Route>
+          <Route path="/notification" element={<Notification />}></Route>
           {/* Ade : route pop untuk route percobaan new feature */}
         </Routes>
       </BrowserRouter>

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const PopularTags = () => {
   return (
     <>
-      <div className="ml-20 mr-20 mt-10">
+      <div className="mt-10 mr-20 ml-20">
         <div className="flex flex-row justify-between mb-4 text-2xl">
-          <h3 className="font-bold text-2xl">Popular Tags</h3>
+          <h3 className="text-2xl font-bold">Popular Tags</h3>
           <Link to="#">
             <h3 className="font-semibold text-[#376AED] hover:text-[#0535af]">
               More
@@ -24,7 +24,7 @@ const PopularTags = () => {
           <p className="ml-10 rounded-md bg-[#EFF4FF] p-1">#dayniki</p>
           <p className="ml-10 rounded-md bg-[#EFF4FF] p-1">#ladygaga</p>
           <p className="ml-10 rounded-md bg-[#EFF4FF] p-1">#dayniki</p>
-          <p className="ml-10 rounded-md bg-[#EFF4FF] p-1">#ladygaga</p>
+          {/* <p className="ml-10 rounded-md bg-[#EFF4FF] p-1">#ladygaga</p> */}
         </div>
       </div>
     </>
