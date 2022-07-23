@@ -47,11 +47,11 @@ const Article = () => {
         <div className="ml-20 mb-4">
           <p className="mb-16 text-2xl font-bold">Today's Popular</p>
           <div className="flex flex-row my-5">
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+            <div className="flex flex-row text-[#388087] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
                 <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#388087] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="mt-3 font-semibold text-black">
@@ -74,11 +74,11 @@ const Article = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+            <div className="flex flex-row text-[#388087] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
                 <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#388087] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="mt-3 font-semibold text-black">
@@ -102,13 +102,13 @@ const Article = () => {
               </div>
             </div>
 
-            {/* <div className="bg-[#0D253C] flex flex-row text-[#376AED] w-[396px] rounded-[16px] shadow-2xl z-20"> */}
+            {/* <div className="bg-[#0D253C] flex flex-row text-[#388087] w-[396px] rounded-[16px] shadow-2xl z-20"> */}
             <div className="w-[396px] bg-[#0D253C] rounded-[16px] opacity-70 h-auto z-30">
-              <div className="flex flex-row text-[#376AED] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
+              <div className="flex flex-row text-[#388087] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
                 <div className="flex z-20 flex-row items-center">
                   <img className="z-0" src={covid} alt=''/>
                   <div className="flex flex-col ml-9">
-                    <p className="text-[#376AED] font-semibold text-xl">
+                    <p className="text-[#388087] font-semibold text-xl">
                       COVID-19
                     </p>
                     <p className="mt-3 font-semibold text-black">
@@ -134,11 +134,11 @@ const Article = () => {
             </div>
           </div>
           <div className="flex flex-row my-5">
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+            <div className="flex flex-row text-[#388087] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
                 <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#388087] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="mt-3 font-semibold text-black">
@@ -161,11 +161,11 @@ const Article = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+            <div className="flex flex-row text-[#388087] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
                 <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#388087] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="mt-3 font-semibold text-black">
@@ -189,13 +189,13 @@ const Article = () => {
               </div>
             </div>
 
-            {/* <div className="bg-[#0D253C] flex flex-row text-[#376AED] w-[396px] rounded-[16px] shadow-2xl z-20"> */}
+            {/* <div className="bg-[#0D253C] flex flex-row text-[#388087] w-[396px] rounded-[16px] shadow-2xl z-20"> */}
             <div className="w-[396px] bg-[#0D253C] rounded-[16px] opacity-70 h-auto z-30">
-              <div className="flex flex-row text-[#376AED] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
+              <div className="flex flex-row text-[#388087] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
                 <div className="flex z-20 flex-row items-center">
                   <img className="z-0" src={covid} alt=''/>
                   <div className="flex flex-col ml-9">
-                    <p className="text-[#376AED] font-semibold text-xl">
+                    <p className="text-[#388087] font-semibold text-xl">
                       COVID-19
                     </p>
                     <p className="mt-3 font-semibold text-black">
@@ -221,11 +221,11 @@ const Article = () => {
             </div>
           </div>
           <div className="flex flex-row my-5">
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+            <div className="flex flex-row text-[#388087] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
                 <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#388087] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="mt-3 font-semibold text-black">
@@ -248,11 +248,11 @@ const Article = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
+            <div className="flex flex-row text-[#388087] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
                 <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#388087] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="mt-3 font-semibold text-black">
@@ -276,13 +276,13 @@ const Article = () => {
               </div>
             </div>
 
-            {/* <div className="bg-[#0D253C] flex flex-row text-[#376AED] w-[396px] rounded-[16px] shadow-2xl z-20"> */}
+            {/* <div className="bg-[#0D253C] flex flex-row text-[#388087] w-[396px] rounded-[16px] shadow-2xl z-20"> */}
             <div className="w-[396px] bg-[#0D253C] rounded-[16px] opacity-70 h-auto z-30">
-              <div className="flex flex-row text-[#376AED] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
+              <div className="flex flex-row text-[#388087] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
                 <div className="flex z-20 flex-row items-center">
                   <img className="z-0" src={covid} alt=''/>
                   <div className="flex flex-col ml-9">
-                    <p className="text-[#376AED] font-semibold text-xl">
+                    <p className="text-[#388087] font-semibold text-xl">
                       COVID-19
                     </p>
                     <p className="mt-3 font-semibold text-black">
@@ -309,7 +309,7 @@ const Article = () => {
           </div>
         </div>
         <div className="flex flex-row justify-center mt-20 mb-20">
-          <button className="items-center w-96 text-[#376AED] h-16 opacity-90 rounded  solid border bg-[#5282FF17]">
+          <button className="items-center w-96 text-[#388087] h-16 opacity-90 rounded  solid border bg-[#5282FF17]">
             {" "}
             Load another 30+ category{" "}
           </button>
