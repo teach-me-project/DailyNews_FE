@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Articles from "./Pages/Article";
 import WriteArticle from "./Pages/WriteArticle";
 import Notification from "./Pages/Notification"
-import { Signup, Signin, Home, Forgot, Categoryy } from "./Pages";
-import ArticleCategory from "./components/components/ArticleCategory";
+import { Signup, Signin, Home, Forgot, Categoryy, ChangePassword,  } from "./Pages";
+
 
 const MainNavigation = () => {
   return (
@@ -18,10 +18,8 @@ const MainNavigation = () => {
           <Route path="/write-article" element={<WriteArticle />}></Route>
           <Route path="/forgot" element={<Forgot />}></Route>
           <Route path="/Category" element={<Categoryy />}></Route>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/pop" element={<ArticleCategory />}></Route>
           <Route path="/notification" element={<Notification />}></Route>
-          {/* Ade : route pop untuk route percobaan new feature */}
+          <Route path="/changepassword" element={<ChangePassword />}></Route>
         </Routes>
       </BrowserRouter>
     </>
