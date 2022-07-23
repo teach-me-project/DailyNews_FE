@@ -1,4 +1,3 @@
-import Navbar from "../../components/components/Navbar"
 import arrow from '../../components/images/arrow.svg'
 import image from '../../components/images/Image.svg'
 import play from '../../components/images/Play.svg'
@@ -7,11 +6,12 @@ import align from '../../components/images/Align.svg'
 import scale from '../../components/images/Scale.svg'
 import { Link } from "react-router-dom"
 import NewFooter from './../../components/components/NewFooter';
+import NavbarLogin from './../../components/components/NavbarLogin';
 
 const WriteArticle = () => {
     return (
         <>
-            <Navbar />
+            <NavbarLogin />
             <div>
                 <div className="text-center mt-20">
                     <h1 className="font-bold text-2xl">Write Article</h1>
