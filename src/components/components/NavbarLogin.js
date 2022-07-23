@@ -5,19 +5,19 @@ const NavbarLogin = () => {
         <>
 
 
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 container">
                 <div className="flex-1">    
                     <p className="flex text-black font-bold text-4xl pl-4 font-['Georgia'] ml-12">
                         News Today
                     </p>
                     <div className="flex ml-20 justify-right">
-                        <Link to="#">
+                        <Link to="/">
                             <p className="px-4 text-xl text-[#8692A6] hover:text-black hover:font-bold">Home</p>
                         </Link>
-                        <Link to="#">
+                        <Link to="/article">
                             <p className="px-4 text-xl text-[#8692A6] hover:text-black hover:font-bold">Articles</p>
                         </Link>
-                        <Link to="#">
+                        <Link to="/Category">
                             <p className="px-4 text-xl text-[#8692A6] hover:text-black hover:font-bold">Category</p>
                         </Link>
                         <Link to="#">
@@ -53,7 +53,7 @@ const NavbarLogin = () => {
                                     <span className="badge">New</span>
                                 </a>
                             </li>
-                            <li><a>Settings</a></li>
+                            <Link to='/changepassword'><li><a>Settings</a></li></Link>
                             <li><a>Logout</a></li>
                         </ul>
                     </div>

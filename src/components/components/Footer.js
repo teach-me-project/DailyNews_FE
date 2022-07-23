@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                     <div className="mb-6 text-lg">
                         <Link to={"#"}>
-                            (621)989898934
+                            (+62)888888888
                         </Link>
                     </div>
                     <div className="text-lg">

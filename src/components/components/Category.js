@@ -5,13 +5,13 @@ import man from "../images/man.png";
 const Category = () => {
   return (
     <>
-      <div className="mt-11">
+      <div className="mt-11 container">
         <div className="ml-20 mr-20">
           <div className="flex flex-row justify-between mb-4 text-2xl">
             <h3 className="font-bold">Category</h3>
-            <h3 className="font-semibold text-[#376AED]">More</h3>
+            <h3 className="font-semibold text-[#7cbdc5] link link-hover">More</h3>
           </div>
-          <div className="flex flex-row text-[#376AED] mb-4 ">
+          <div className="flex flex-row  mb-4 ">
             <div className="flex flex-col items-center">
               <img src={donal} alt="" />
               <p className="text-black font-semibold">Goverments</p>

@@ -3,23 +3,23 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="container my-3">
+      <div className="container my-3 ">
         <div className="flex justify-between items-center">
           <p className="flex text-black font-bold text-4xl pl-4 font-['Georgia'] ml-12">
             News Today
           </p>
           <div className="flex ">
-            <Link to="#">
-              <p className="px-4 text-xl hover:text-[#8692A6]">Home</p>
+            <Link to="/">
+              <p className="px-4 text-xl text-[#8692A6] hover:text-black hover:font-bold">Home</p>
+            </Link>
+            <Link to="/article">
+              <p className="px-4 text-xl text-[#8692A6] hover:text-black hover:font-bold">Articles</p>
+            </Link>
+            <Link to="/Category">
+              <p className="px-4 text-xl text-[#8692A6] hover:text-black hover:font-bold">Category</p>
             </Link>
             <Link to="#">
-              <p className="px-4 text-xl hover:text-[#8692A6]">Articles</p>
-            </Link>
-            <Link to="#">
-              <p className="px-4 text-xl hover:text-[#8692A6]">Category</p>
-            </Link>
-            <Link to="#">
-              <p className="px-4 text-xl hover:text-[#8692A6]">About</p>
+              <p className="px-4 text-xl text-[#8692A6] hover:text-black hover:font-bold">About</p>
             </Link>
           </div>
           <div className="flex items-center mr-2">
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
             <div className="px-5 ">
               <Link to="/signin">
-                <button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-white font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#376AED] active:shadow-lg transition duration-150 ease-in-out ">
+                <button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-white font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
                   Login
                 </button>
               </Link>

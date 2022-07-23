@@ -12,7 +12,7 @@ const LetHear = () => {
                     <p className="mb-20">
                         See how well News Today works in a real user’s life.
                     </p>
-                    <button className="font-['Mulish'] w-56 h-12 py-1 px-1 text-black font-bold text-xl hover:text-white leading-tight  rounded-xl shadow-md hover:bg-purple-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-400 active:shadow-lg transition duration-150 ease-in-out ">Let's get started</button>
+                    <button className="inline-block w-[170px] font-['Mulish'] h-12 py-2.5 text-white font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out ">Let's get started</button>
                     {/* <button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-400 active:shadow-lg transition duration-150 ease-in-out ">
                         Let's get started
                     </button> */}

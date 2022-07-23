@@ -6,19 +6,19 @@ import saves from "../images/save.svg";
 const Recomended = () => {
   return (
     <>
-      <div className="mt-11">
+      <div className="mt-5 container mb-5">
         <div className="ml-20 mr-20">
           <div className="flex flex-row justify-between mb-4 text-2xl">
             <h3 className="font-bold">Recommended</h3>
-            <h3 className="font-semibold text-[#376AED]">More</h3>
+            <h3 className="font-semibold text-[#7cbdc5] link link-hover">More</h3>
           </div>
 
           <div className="flex flex-row">
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl">
+            <div className="flex flex-row text-[#7cbdc5] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl">
               <div className="flex flex-row items-center">
                 <img src={covid} alt="" />
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#7cbdc5] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="text-black font-semibold mt-3">
@@ -41,11 +41,11 @@ const Recomended = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] ml-6 shadow-2xl">
+            <div className="flex flex-row text-[#7cbdc5] mb-4 w-[396px] bg-white rounded-[16px] ml-6 shadow-2xl">
               <div className="flex flex-row items-center">
                 <img src={covid} alt="" />
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#7cbdc5] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="text-black font-semibold mt-3">
@@ -68,11 +68,11 @@ const Recomended = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] ml-6 shadow-2xl">
+            <div className="flex flex-row text-[#7cbdc5] mb-4 w-[396px] bg-white rounded-[16px] ml-6 shadow-2xl">
               <div className="flex flex-row items-center">
                 <img src={covid} alt="" />
                 <div className="flex flex-col ml-9">
-                  <p className="text-[#376AED] font-semibold text-xl">
+                  <p className="text-[#7cbdc5] font-semibold text-xl">
                     COVID-19
                   </p>
                   <p className="text-black font-semibold mt-3">
