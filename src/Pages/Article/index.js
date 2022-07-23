@@ -16,7 +16,7 @@ const Article = () => {
       <NavbarLogin />
       <div className="container">
         <div className="flex flex-col bg-white">
-          <img className="relative w-full" src={bgMain} />
+          <img className="relative w-full" src={bgMain} alt=''/>
           <div className="absolute ml-28 text-7xl text-['Georgia'] mt-28">
             Start Writing an
             <br /> Article
@@ -35,7 +35,7 @@ const Article = () => {
 
         <div>
           <div className="flex flex-row mt-16 mb-20 ml-28">
-            <img className="w-5" src={Filter} />
+            <img className="w-5" src={Filter} alt=''/>
             <p className="text-base">
               Filter Article : sort by <b>category</b>
             </p>
@@ -49,7 +49,7 @@ const Article = () => {
           <div className="flex flex-row my-5">
             <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
-                <img src={covid} />
+                <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
                   <p className="text-[#376AED] font-semibold text-xl">
                     COVID-19
@@ -60,15 +60,15 @@ const Article = () => {
                   </p>
                   <div className="flex flex-row mt-14">
                     <div className="flex flex-row">
-                      <img className="mr-1" src={finger} />
+                      <img className="mr-1" src={finger} alt=''/>
                       <p>2.1k</p>
                     </div>
                     <div className="flex flex-row ml-3.5">
-                      <img className="mr-1" src={timer} />
+                      <img className="mr-1" src={timer} alt=''/>
                       <p>3m ago</p>
                     </div>
                     <div className="flex flex-row ml-3">
-                      <img src={saves} />
+                      <img src={saves} alt=''/>
                     </div>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Article = () => {
             </div>
             <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
-                <img src={covid} />
+                <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
                   <p className="text-[#376AED] font-semibold text-xl">
                     COVID-19
@@ -87,15 +87,15 @@ const Article = () => {
                   </p>
                   <div className="flex flex-row mt-14">
                     <div className="flex flex-row">
-                      <img className="mr-1" src={finger} />
+                      <img className="mr-1" src={finger} alt=''/>
                       <p>2.1k</p>
                     </div>
                     <div className="flex flex-row ml-3.5">
-                      <img className="mr-1" src={timer} />
+                      <img className="mr-1" src={timer} alt=''/>
                       <p>3m ago</p>
                     </div>
                     <div className="flex flex-row ml-3">
-                      <img src={saves} />
+                      <img src={saves} alt=''/>
                     </div>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const Article = () => {
             <div className="w-[396px] bg-[#0D253C] rounded-[16px] opacity-70 h-auto z-30">
               <div className="flex flex-row text-[#376AED] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
                 <div className="flex z-20 flex-row items-center">
-                  <img className="z-0" src={covid} />
+                  <img className="z-0" src={covid} alt=''/>
                   <div className="flex flex-col ml-9">
                     <p className="text-[#376AED] font-semibold text-xl">
                       COVID-19
@@ -117,15 +117,15 @@ const Article = () => {
                     </p>
                     <div className="flex flex-row mt-14">
                       <div className="flex flex-row">
-                        <img className="mr-1" src={finger} />
+                        <img className="mr-1" src={finger} alt=''/>
                         <p>2.1k</p>
                       </div>
                       <div className="flex flex-row ml-3.5">
-                        <img className="mr-1" src={timer} />
+                        <img className="mr-1" src={timer} alt=''/>
                         <p>3m ago</p>
                       </div>
                       <div className="flex flex-row ml-3">
-                        <img src={saves} />
+                        <img src={saves} alt=''/>
                       </div>
                     </div>
                   </div>
@@ -136,7 +136,7 @@ const Article = () => {
           <div className="flex flex-row my-5">
             <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
-                <img src={covid} />
+                <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
                   <p className="text-[#376AED] font-semibold text-xl">
                     COVID-19
@@ -147,15 +147,15 @@ const Article = () => {
                   </p>
                   <div className="flex flex-row mt-14">
                     <div className="flex flex-row">
-                      <img className="mr-1" src={finger} />
+                      <img className="mr-1" src={finger} alt=''/>
                       <p>2.1k</p>
                     </div>
                     <div className="flex flex-row ml-3.5">
-                      <img className="mr-1" src={timer} />
+                      <img className="mr-1" src={timer} alt=''/>
                       <p>3m ago</p>
                     </div>
                     <div className="flex flex-row ml-3">
-                      <img src={saves} />
+                      <img src={saves} alt=''/>
                     </div>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ const Article = () => {
             </div>
             <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
-                <img src={covid} />
+                <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
                   <p className="text-[#376AED] font-semibold text-xl">
                     COVID-19
@@ -174,15 +174,15 @@ const Article = () => {
                   </p>
                   <div className="flex flex-row mt-14">
                     <div className="flex flex-row">
-                      <img className="mr-1" src={finger} />
+                      <img className="mr-1" src={finger} alt=''/>
                       <p>2.1k</p>
                     </div>
                     <div className="flex flex-row ml-3.5">
-                      <img className="mr-1" src={timer} />
+                      <img className="mr-1" src={timer} alt=''/>
                       <p>3m ago</p>
                     </div>
                     <div className="flex flex-row ml-3">
-                      <img src={saves} />
+                      <img src={saves} alt=''/>
                     </div>
                   </div>
                 </div>
@@ -193,7 +193,7 @@ const Article = () => {
             <div className="w-[396px] bg-[#0D253C] rounded-[16px] opacity-70 h-auto z-30">
               <div className="flex flex-row text-[#376AED] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
                 <div className="flex z-20 flex-row items-center">
-                  <img className="z-0" src={covid} />
+                  <img className="z-0" src={covid} alt=''/>
                   <div className="flex flex-col ml-9">
                     <p className="text-[#376AED] font-semibold text-xl">
                       COVID-19
@@ -204,15 +204,15 @@ const Article = () => {
                     </p>
                     <div className="flex flex-row mt-14">
                       <div className="flex flex-row">
-                        <img className="mr-1" src={finger} />
+                        <img className="mr-1" src={finger} alt=''/>
                         <p>2.1k</p>
                       </div>
                       <div className="flex flex-row ml-3.5">
-                        <img className="mr-1" src={timer} />
+                        <img className="mr-1" src={timer} alt=''/>
                         <p>3m ago</p>
                       </div>
                       <div className="flex flex-row ml-3">
-                        <img src={saves} />
+                        <img src={saves} alt=''/>
                       </div>
                     </div>
                   </div>
@@ -223,7 +223,7 @@ const Article = () => {
           <div className="flex flex-row my-5">
             <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
-                <img src={covid} />
+                <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
                   <p className="text-[#376AED] font-semibold text-xl">
                     COVID-19
@@ -234,15 +234,15 @@ const Article = () => {
                   </p>
                   <div className="flex flex-row mt-14">
                     <div className="flex flex-row">
-                      <img className="mr-1" src={finger} />
+                      <img className="mr-1" src={finger} alt=''/>
                       <p>2.1k</p>
                     </div>
                     <div className="flex flex-row ml-3.5">
-                      <img className="mr-1" src={timer} />
+                      <img className="mr-1" src={timer} alt=''/>
                       <p>3m ago</p>
                     </div>
                     <div className="flex flex-row ml-3">
-                      <img src={saves} />
+                      <img src={saves} alt=''/>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ const Article = () => {
             </div>
             <div className="flex flex-row text-[#376AED] mb-4 w-[396px] bg-white rounded-[16px] shadow-2xl mr-2">
               <div className="flex flex-row items-center">
-                <img src={covid} />
+                <img src={covid} alt=''/>
                 <div className="flex flex-col ml-9">
                   <p className="text-[#376AED] font-semibold text-xl">
                     COVID-19
@@ -261,15 +261,15 @@ const Article = () => {
                   </p>
                   <div className="flex flex-row mt-14">
                     <div className="flex flex-row">
-                      <img className="mr-1" src={finger} />
+                      <img className="mr-1" src={finger} alt=''/>
                       <p>2.1k</p>
                     </div>
                     <div className="flex flex-row ml-3.5">
-                      <img className="mr-1" src={timer} />
+                      <img className="mr-1" src={timer} alt=''/>
                       <p>3m ago</p>
                     </div>
                     <div className="flex flex-row ml-3">
-                      <img src={saves} />
+                      <img src={saves} alt=''/>
                     </div>
                   </div>
                 </div>
@@ -280,7 +280,7 @@ const Article = () => {
             <div className="w-[396px] bg-[#0D253C] rounded-[16px] opacity-70 h-auto z-30">
               <div className="flex flex-row text-[#376AED] mb-4 w-[396px] rounded-[16px]  shadow-2xl mr-2 bg-white">
                 <div className="flex z-20 flex-row items-center">
-                  <img className="z-0" src={covid} />
+                  <img className="z-0" src={covid} alt=''/>
                   <div className="flex flex-col ml-9">
                     <p className="text-[#376AED] font-semibold text-xl">
                       COVID-19
@@ -291,15 +291,15 @@ const Article = () => {
                     </p>
                     <div className="flex flex-row mt-14">
                       <div className="flex flex-row">
-                        <img className="mr-1" src={finger} />
+                        <img className="mr-1" src={finger} alt=''/>
                         <p>2.1k</p>
                       </div>
                       <div className="flex flex-row ml-3.5">
-                        <img className="mr-1" src={timer} />
+                        <img className="mr-1" src={timer} alt=''/>
                         <p>3m ago</p>
                       </div>
                       <div className="flex flex-row ml-3">
-                        <img src={saves} />
+                        <img src={saves} alt=''/>
                       </div>
                     </div>
                   </div>

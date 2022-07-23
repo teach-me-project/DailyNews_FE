@@ -18,7 +18,7 @@ const LetHear = () => {
                     </button> */}
                 </div>
                 <div>
-                    <img className="w-[671px] m-28" src={video} />
+                    <img className="w-[671px] m-28" src={video} alt=''/>
                 </div>
             </div>
         </>

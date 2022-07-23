@@ -14,7 +14,7 @@ const Forget = () => {
 
                 <div className="flex-1 ml-[107px] mt-12">
                     <div className="flex flex-row items-center mb-10">
-                        <img className="w-3 mr-5" src={arrow} />
+                        <img className="w-3 mr-5" src={arrow} alt=''/>
                         <p className="font-semibold items-center font-xl">Back</p>
                     </div>
                     <h1 className="text-5xl font-['Inter'] mb-8">DON'T WORRY</h1>

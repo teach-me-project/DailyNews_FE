@@ -1,6 +1,3 @@
-import google from '../../components/images/Google.svg'
-import facebook from '../../components/images/Facebook.svg'
-import twitter from '../../components/images/Twitter.svg'
 import { Link } from "react-router-dom";
 import NewFooter from './../../components/components/NewFooter';
 
