@@ -7,7 +7,6 @@ import PopularTags from "../../components/components/PopularTags"
 import LetHear from "../../components/components/LetHear";
 import NewFooter from "../../components/components/NewFooter";
 import Footer from "../../components/components/Footer"
-import NavbarLogin from "../../components/components/NavbarLogin"
 
 
 const Home = () => {

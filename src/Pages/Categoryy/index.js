@@ -2,12 +2,12 @@ import bgMain from "../../components/images/roman.png";
 import SortBy from "../../components/components/Sortby";
 import ArticleCategory from "../../components/components/ArticleCategory";
 import NewFooter from './../../components/components/NewFooter';
-import NavbarLogin from './../../components/components/NavbarLogin';
+import Navbar from './../../components/components/Navbar';
 
 const Category = () => {
   return (
     <>
-      <NavbarLogin />
+      <Navbar />
       <div className="container">
         <div className="flex flex-col">
           <img className="w-full relative " src={bgMain} alt="" />

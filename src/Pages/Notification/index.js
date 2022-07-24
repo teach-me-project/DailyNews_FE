@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ruka from "../../components/images/ruka.jpg"
-import NavbarLogin from "../../components/components/NavbarLogin"
+import Navbar from "../../components/components/Navbar"
 import arrow from '../../components/images/arrow.svg'
 import Filter from "../../components/images/Filter.svg"
 import NewFooter from '../../components/components/NewFooter';
@@ -9,7 +9,7 @@ import NewFooter from '../../components/components/NewFooter';
 const Notification = () => {
     return (
         <>
-            <NavbarLogin />
+            <Navbar />
 
             <div>
                 <div className="mt-20 text-center">

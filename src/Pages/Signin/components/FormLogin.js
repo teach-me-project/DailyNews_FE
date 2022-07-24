@@ -8,11 +8,6 @@ import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { AuthLogin } from "../../../Redux/Actions/Auth"
 
-// const dispatch = useDispatch()
-// let navigate = useNavigate()
-// const { data, error, loading, isLogin} = useSelector((state) => state.auth)
-// console.log(data)
-
 const FormLogin = () => {
     const { data, error, loading, isLogin} = useSelector((state) => state.auth)
     const dispatch = useDispatch()
@@ -21,6 +16,7 @@ const FormLogin = () => {
         email: '',
         password: ''
     })
+
     const handleLogin = (e) => {
         e.preventDefault()
         dispatch(AuthLogin(formLogin))
@@ -29,20 +25,22 @@ const FormLogin = () => {
         if(isLogin === true) {
             navigate('/', {replace: true})
         } else {
-            navigate('/signIn', {replace: true})
+            navigate('/signin', {replace: true})
         }
     }, [isLogin]) 
+
+    
   return (
     <>
     <div className='form-login'>
         <div className="flex flex-row">
-            <div className="flex-1">
+            <div className="flex-1 mt-10">
                 <h1 className="text-4xl font-['Mulish'] mb-6">Login</h1>
                 <form onSubmit={handleLogin}>
                     <div>
                         <p className=" font-['Mulish'] text-base font-semibold text-[#388087] leading-5 mb-3">Email Address :</p>
                         <input type="text"
-                            className="form-control block w-[400px] px-2 py-1 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
+                            className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
                             id="exampleFormControlInput2" placeholder="Enter your email address" onChange={(e) => setFormLogin((prevData) => ({
                                 ...prevData,
                                 email: e.target.value
@@ -50,21 +48,30 @@ const FormLogin = () => {
                     </div>
                     <div>
                         <p className="d-block font-['Mulish'] text-base font-semibold text-[#4E4B66] leading-3 mb-3">Password :</p>
-                        <input type="text"
-                        className="form-control block w-[400px] px-3 py-1 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out  mb-6 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        <input type="password"
+                        className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out  mb-6 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                         id="exampleFormControlInput2" placeholder="Enter your password" onChange={(e) => setFormLogin((prevData) => ({
                             ...prevData,
                             password: e.target.value
                         }))}/>
                     </div>
+                    {loading ? (
+                    <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleLogin} disabled={true}>Loading..</button>
+                    ):(
+                    <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleLogin}>Login</button>
+                    )} 
+                    {/* {alert(`${error.message}`)
+                    // `${error.message}`
+                    // 'Wrong email or password'
+                    }  */}
                 </form>
-                <div className="button mb-8">
+                {/* <div className="button mb-8">
                     <button type="button"
-                    className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
+                    className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleLogin}>
                     Login
                     </button>
-                </div>
-                <div className="inline-block w-[400px] font-['Inter'] text-[#8692A6] leading-5 text-center">
+                </div> */}
+                <div className="inline-block mt-4 w-[400px] font-['Inter'] text-[#8692A6] leading-5 text-center">
                     <div className="mb-4 font-['Mulish']">OR SIGN UP WITH</div>
                     <div className="flex flex-row justify-center mb-5">
                     <img className="mr-6 w- h-8" src={google} alt="google" />
@@ -74,10 +81,12 @@ const FormLogin = () => {
                 <p className="mb-5 font-['Mulish']" >
                 already have account?
                 </p> <hr />
-                <button type="button"
-                className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
-                Sign Up Now
-                </button>
+                <Link to={'/signup'}>
+                    <button type="button"
+                    className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
+                    Sign Up Now
+                    </button>
+                </Link>
                 <Link to={'/'}>
                     <p className="text-black underline mt-7 font-semibold font-['Mulish']">
                     Back to Home Page
@@ -109,21 +118,21 @@ const FormLogin = () => {
             <form onSubmit={handleLogin}>
                 <div>
                     <p>Email</p>
-                    <input type="email" id="email" placeholder="Enter your email address" onChange={(e) => setFormLogin((prevData) => ({
+                    <input className="form-control block px-3 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out  mb-6 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="email" id="email" placeholder="Enter your email address" onChange={(e) => setFormLogin((prevData) => ({
                         ...prevData,
                         email: e.target.value
                     }))}/>
                 </div>
                 <div>
                     <p>Password</p>
-                    <input type="password" id="password" placeholder="Enter your password" onChange={(e) => setFormLogin((prevData) => ({
+                    <input className="form-control block px-3 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out  mb-6 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="password" id="password" placeholder="Enter your password" onChange={(e) => setFormLogin((prevData) => ({
                         ...prevData,
                         password: e.target.value
                     }))}/>
                 </div>
             </form>
             <Link to = {'#'}>Forgot your password?</Link> 
-            <button className='btn-login-mobile'>Login</button>  
+            <button className='btn-login-mobile' onClick={handleLogin}>Login</button>  
             <div className='footer-mobile'>
                 <h1>FAST SIGN IN</h1>
                 <div className="footer-mobile-logo">
@@ -133,9 +142,7 @@ const FormLogin = () => {
                 </div>
             </div>
         </div>
-        
     </div>
-
     </>
   )
 }

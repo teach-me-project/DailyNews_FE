@@ -1,6 +1,7 @@
 import sort from "../../components/images/Filter.svg";
 
 const SortBy = () => {
+ 
   return (
     <>
       <div className="container flex flex-row justify-between px-5 my-10">

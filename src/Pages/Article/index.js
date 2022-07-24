@@ -7,13 +7,12 @@ import finger from "../../components/images/jempol.svg";
 import timer from "../../components/images/jam.svg";
 import saves from "../../components/images/save.svg";
 import Footer from "../../components/components/Footer";
-import NavbarLogin from "./../../components/components/NavbarLogin";
 import NewFooter from "./../../components/components/NewFooter";
 
 const Article = () => {
   return (
     <>
-      <NavbarLogin />
+      <Navbar />
       <div className="container">
         <div className="flex flex-col bg-white">
           <img className="relative w-full" src={bgMain} alt=''/>

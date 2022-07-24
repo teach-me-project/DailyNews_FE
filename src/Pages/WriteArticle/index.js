@@ -6,12 +6,12 @@ import align from '../../components/images/Align.svg'
 import scale from '../../components/images/Scale.svg'
 import { Link } from "react-router-dom"
 import NewFooter from './../../components/components/NewFooter';
-import NavbarLogin from './../../components/components/NavbarLogin';
+import Navbar from './../../components/components/Navbar';
 
 const WriteArticle = () => {
     return (
         <>
-            <NavbarLogin />
+            <Navbar />
             <div>
                 <div className="text-center mt-20">
                     <h1 className="font-bold text-2xl">Write Article</h1>
