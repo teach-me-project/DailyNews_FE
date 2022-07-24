@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="navbar bg-base-100 container">
+    <div className="navbar my-10 bg-base-100 container">
         <div className="flex-1">    
           <p className="flex text-black font-bold text-4xl pl-4 font-['Georgia'] ml-12">
           News Today
@@ -61,10 +61,12 @@ const Navbar = () => {
             </label>
             <ul tabindex="0" className="p-2 mt-3 w-52 shadow menu menu-compact dropdown-content bg-base-100 rounded-box">
               <li>
-                <p className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </p>
+                <Link to={'/profile'}>
+                  <p className="justify-between">
+                    Profile
+                    <span className="badge">New</span>
+                  </p>
+                </Link>
               </li>
               <Link to='/changepassword'><li><p>Settings</p></li></Link>
               <li onClick={() => {

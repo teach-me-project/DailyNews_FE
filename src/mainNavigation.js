@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Articles from "./Pages/Article";
 import WriteArticle from "./Pages/WriteArticle";
 import Notification from "./Pages/Notification"
-import { Signup, Signin, Home, Forgot, Categoryy, ChangePassword,  } from "./Pages";
+import { Signup, Signin, Home, Forgot, Categoryy, ChangePassword, Profile  } from "./Pages";
 
 
 const MainNavigation = () => {
@@ -20,6 +20,7 @@ const MainNavigation = () => {
           <Route path="/Category" element={<Categoryy />}></Route>
           <Route path="/notification" element={<Notification />}></Route>
           <Route path="/changepassword" element={<ChangePassword />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
         </Routes>
       </BrowserRouter>
     </>
