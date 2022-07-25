@@ -95,7 +95,7 @@ npm start
   
 
 
-# Our Team - Rainbow.io
+# Our Team - Teach_Me!
  | profile | Name | Stack | Github | Linkedin |
  | ------- | ---- | ------ | ------ | -------- |
  | ![profile Dzakia][img-Dzakia] | Annisa Dzakia Ramadhina | Fullstack | [Dzakia](https://github.com/dzakia-st3)|[Dzakia](https://www.linkedin.com/in/vigarp/) 
