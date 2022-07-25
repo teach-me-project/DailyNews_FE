@@ -12,9 +12,6 @@
 # About :
   
 ---
-## Contributors
-
-This project exists thanks to [all the people who contribute](https://github.com/orgs/teach-me-project/people).
 
   [![Netlify Status](https://api.netlify.com/api/v1/badges/29e58c63-9c4b-45a9-af9e-e827896feb5d/deploy-status)](https://app.netlify.com/sites/ankasa-rainbow/deploys)
 ## Getting Started
@@ -33,7 +30,7 @@ This project exists thanks to [all the people who contribute](https://github.com
 
   
 
-1. Clone this repos (ankasa-frontend)
+1. Clone this repos (DailyNews)
 
 ```sh
 git clone https://github.com/teach-me-project/DailyNews_FE
@@ -67,7 +64,7 @@ npm start
 
   
 # Features Application
-- [x] Login ,Register, forgot account.
+- [x] Auth.
 - [x] Explore for dailynewws.
 - [x] Post dailynews.
 - [x] Profile.
