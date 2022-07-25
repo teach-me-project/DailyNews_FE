@@ -15,3 +15,97 @@
 ## Contributors
 
 This project exists thanks to [all the people who contribute](https://github.com/orgs/teach-me-project/people).
+
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/29e58c63-9c4b-45a9-af9e-e827896feb5d/deploy-status)](https://app.netlify.com/sites/ankasa-rainbow/deploys)
+## Getting Started
+
+  
+
+### Prerequisites
+
+ Make sure that Node JS is installed on the computer.
+
+* [Node Js](https://nodejs.org/)
+
+  
+
+### Installation
+
+  
+
+1. Clone this repos (ankasa-frontend)
+
+```sh
+git clone https://github.com/teach-me-project/DailyNews_FE
+```
+
+2. Go To Folder Repo
+
+```sh
+code .
+```
+
+3. Install Module
+
+```sh
+npm install
+```
+  
+4. Start website
+
+```sh
+npm start
+```
+
+  
+
+### Related Project
+
+* [`DailyNews_Frontend`](https://github.com/teach-me-project/DailyNews_FE)
+
+* [`DailyNews_Backend`](https://github.com/teach-me-project/DailyNews_BE)
+
+  
+# Features Application
+- [x] Login ,Register, forgot account.
+- [x] Explore for dailynewws.
+- [x] Post dailynews.
+- [x] Profile.
+- [x] Notification.
+## Screenshots
+
+  
+
+<div  align="center">
+
+<img  width="350"  src="https://raw.githubusercontent.com/Rainbow-io/ankasa-frontend/dev/src/assets/ss/ankasa-loginpage.png">
+
+<img  width="350"  src="https://raw.githubusercontent.com/Rainbow-io/ankasa-frontend/dev/src/assets/ss/ankasa-explore.png">
+
+</div>
+
+<div  align="center">
+
+<img  width="350"  src="https://raw.githubusercontent.com/Rainbow-io/ankasa-frontend/dev/src/assets/ss/ankasa-findticket.png">
+
+<img  width="350"  src="https://raw.githubusercontent.com/Rainbow-io/ankasa-frontend/dev/src/assets/ss/ankasa-mybooking.png">
+
+</div>
+
+  
+
+
+# Our Team - Rainbow.io
+ | profile | Name | Stack | Github | Linkedin |
+ | ------- | ---- | ------ | ------ | -------- |
+ | ![profile Dzakia][img-Dzakia] | Annisa Dzakia Ramadhina | Fullstack | [Dzakia](https://github.com/vigarp)|[Dzakia](https://www.linkedin.com/in/vigarp/) 
+ | ![profile Sandi][img-Sandi] | Muhammad Sandi Maulana Y| Backend| [Sandi](https://github.com/dindachyfr)|[Sandi](https://www.linkedin.com/in/adindacahyaferina) 
+ | ![profile Vickri][img-Vickri] | Vickri Fahrurozi | Backend | [Vickri](https://github.com/tyassusanto)|[Vickri](https://linkedin.com/in/tyassusanto/) 
+ | ![profile Ade][img-Ade] | Ade Ryzki Aprinata | Frontend | [Ade](https://github.com/MuhDRifai)|[Ade](https://www.linkedin.com/in/muhamadrifai23/)
+  | ![profile Nahrowi][img-Nahrowi] | Muhammad Nahrowi | Frontend | [Nahrowi](https://github.com/wahyuKurniawaan)|[Nahrowi](https://www.linkedin.com/in/ridhosuhendar)
+
+[img-Dzakia]: https://avatars.githubusercontent.com/u/105700671?v=4
+[img-Sandi]: https://avatars.githubusercontent.com/u/40363306?v=4
+[img-Vickri]: https://avatars.githubusercontent.com/u/92015831?v=4
+[img-Ade]: https://avatars.githubusercontent.com/u/95088271?v=4
+[img-Nahrowi]: https://avatars.githubusercontent.com/u/86625224?v=4
