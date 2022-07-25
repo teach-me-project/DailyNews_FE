@@ -105,7 +105,7 @@ npm start
   | ![profile Nahrowi][img-Nahrowi] | Muhammad Nahrowi | Frontend | [Nahrowi](https://github.com/wahyuKurniawaan)|[Nahrowi](https://www.linkedin.com/in/ridhosuhendar)
 
 [img-Dzakia]: https://avatars.githubusercontent.com/u/105700671?v=4
-[img-Sandi]: https://avatars.githubusercontent.com/u/40363306?v=4
-[img-Vickri]: https://avatars.githubusercontent.com/u/92015831?v=4
+[img-Sandi]: https://avatars.githubusercontent.com/u/69453646?v=4
+[img-Vickri]: https://avatars.githubusercontent.com/u/40363306?v=4
 [img-Ade]: https://avatars.githubusercontent.com/u/95088271?v=4
 [img-Nahrowi]: https://avatars.githubusercontent.com/u/86625224?v=4
