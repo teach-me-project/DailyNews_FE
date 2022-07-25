@@ -96,7 +96,7 @@ npm start
  | ------- | ---- | ------ | ------ | -------- |
  | ![profile Dzakia][img-Dzakia] | Annisa Dzakia Ramadhina | Fullstack | [Dzakia](https://github.com/dzakia-st3)|[Dzakia](https://www.linkedin.com/) 
  | ![profile Sandi][img-Sandi] | Muhammad Sandi Maulana Y| Backend| [Sandi](https://github.com/muhammadsandi12)|[Sandi](https://www.linkedin.com/) 
- | ![profile Vickri][img-Vickri] | Vickri Fahrurozi | Backend | [Vickri](https://github.com/VickriFahrurozi)|[Vickri](https://www.linkedin.com/in/vickri-fahrurozi/) 
+ | ![profile Vickri][img-Vickri] | Vickri Fahrurozi | Backend | [Vickri](https://github.com/VickriFahrurozi)|[Vickri](https://www.linkedin.com/in/vickri-fahrurozi-7ba7a9193/?trk=public_profile_samename-profile&originalSubdomain=id) 
  | ![profile Ade][img-Ade] | Ade Ryzki Aprinata | Frontend | [Ade](https://github.com/ade-ryzki)|[Ade](https://www.linkedin.com/in/aderyzki/)
  | ![profile Nahrowi][img-Nahrowi] | Muhammad Nahrowi | Frontend | [Nahrowi](https://github.com/m-nahrowi)|[Nahrowi](https://www.linkedin.com/)
 
