@@ -52,7 +52,18 @@ npm start
 ## Screenshots
   
 <div  align="center">
-<img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/nenek.png">
+<img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/3.%20signin.png">
+<img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/4.%20signup.png">
+
+ <div  align="center">
+<img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/5.%20writeeee.png">
+<img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/1.%20ARTICLE.png">
+   
+  <div  align="center">
+ <img  width="350"  src=" https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/2.%20category.png">
+<img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/5.%20writeeee.png">
+   
+
   
 # Our Team - Teach_Me!
  | profile | Name | Stack | Github | Linkedin |
