@@ -60,7 +60,7 @@ npm start
 <img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/1.%20ARTICLE.png">
    
   <div  align="center">
- <img  width="350"  src=" https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/2.%20category.png">
+ <img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/2.%20category.png">
 <img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/06.homepage.png">
    
 
