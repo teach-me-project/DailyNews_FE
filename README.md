@@ -62,3 +62,9 @@ npm start
  | ![profile Vickri][img-Vickri] | Vickri Fahrurozi | Backend | [Vickri](https://github.com/VickriFahrurozi)|[Vickri](https://www.linkedin.com/in/vickri-fahrurozi-7ba7a9193/?trk=public_profile_samename-profile&originalSubdomain=id) 
  | ![profile Ade][img-Ade] | Ade Ryzki Aprinata | Frontend | [Ade](https://github.com/ade-ryzki)|[Ade](https://www.linkedin.com/in/aderyzki/)
  | ![profile Nahrowi][img-Nahrowi] | Muhammad Nahrowi | Frontend | [Nahrowi](https://github.com/m-nahrowi)|[Nahrowi](https://www.linkedin.com/)
+  
+ [img-Dzakia]: https://avatars.githubusercontent.com/u/105700671?v=4
+[img-Sandi]: https://avatars.githubusercontent.com/u/69453646?v=4
+[img-Vickri]: https://avatars.githubusercontent.com/u/40363306?v=4
+[img-Ade]: https://avatars.githubusercontent.com/u/95088271?v=4
+[img-Nahrowi]: https://avatars.githubusercontent.com/u/86625224?v=4
