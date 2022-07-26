@@ -29,7 +29,6 @@ export const GetUser = (id) => {
         })
         .then ((res) => {
             dispatch(GetUserSuccess(res.data.data))
-            console.log(res.data.data, 'lililililiii')
         })
         .catch((err)=> {
             dispatch(GetUserError(err.response.data))
@@ -41,4 +40,44 @@ export const GetUser = (id) => {
     }
 }
 
+
+const UpdateUserRequest = () => {
+    return {
+        type: "UPDATE_USER_REQUEST"
+    }
+}
+
+const UpdateUserSuccess = (data) => {
+    return {
+        type: "UPDATE_USER_SUCCESS",
+        payload: data
+    }
+}
+
+const UpdateUserError = (error) => {
+    return {
+        type: "UPDATE_USER_ERROR",
+        payload: error
+    }
+}
+
+export const UpdateUser = (formData,id) => {
+    return (dispatch) => {
+        dispatch(UpdateUserRequest())
+        console.log(formData, 'form data dari action')
+        
+        axios({
+            method: "PATCH",
+            url: `http://localhost:3289/api/v1/users/${id}`,
+            data: formData
+        })
+        .then ((res) => {
+            dispatch(UpdateUserSuccess(res.data))
+            console.log(res.data)
+        })
+        .catch((err)=> {
+            dispatch(UpdateUserError(err.response.data))
+        })
+    }
+}
 

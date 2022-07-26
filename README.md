@@ -1,107 +1,70 @@
-# TEACH_ME!  [![DailyNews](https://awesome.re/badge-flat2.svg)](https://)
-<h3 align="center">
+# Getting Started with Create React App
 
-![](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img src="https://camo.githubusercontent.com/5bbf8ca61ef5f92684489ace45ad6f45984fff87a621040c62b1fe31e3005ff9/687474703a2f2f692e696d6775722e636f6d2f436a34724d72532e676966" width="30">
-  Welcome to DailyNews!
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
-  
----
-<div align="center">
-# About :
-  
----
+## Available Scripts
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/29e58c63-9c4b-45a9-af9e-e827896feb5d/deploy-status)]()
-## Getting Started
+In the project directory, you can run:
 
-  
+### `npm start`
 
-### Prerequisites
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Make sure that Node JS is installed on the computer.
-* [Node Js](https://nodejs.org/)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-  
+### `npm test`
 
-### Installation
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-  
+### `npm run build`
 
-1. Clone this repos (DailyNews)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```sh
-git clone https://github.com/teach-me-project/DailyNews_FE
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-2. Go To Folder Repo
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```sh
-code .
-```
+### `npm run eject`
 
-3. Install Module
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-```sh
-npm install
-```
-  
-4. Start website
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```sh
-npm start
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-  
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Related Project
+## Learn More
 
-* [`DailyNews_Frontend`](https://github.com/teach-me-project/DailyNews_FE)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* [`DailyNews_Backend`](https://github.com/teach-me-project/DailyNews_BE)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-  
-# Features Application
-- [x] Auth.
-- [x] Explore for dailynewws.
-- [x] Post dailynews.
-- [x] Profile.
-- [x] Notification.
-## Screenshots
+### Code Splitting
 
-  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-<div  align="center">
+### Analyzing the Bundle Size
 
-<img  width="350"  src="https://github.com/teach-me-project/DailyNews_FE/blob/main/src/components/images/nenek.png">
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-<img  width="350"  src="https://raw.githubusercontent.com/Rainbow-io/ankasa-frontend/dev/src/assets/ss/ankasa-explore.png">
+### Making a Progressive Web App
 
-</div>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-<div  align="center">
+### Advanced Configuration
 
-<img  width="350"  src="https://raw.githubusercontent.com/Rainbow-io/ankasa-frontend/dev/src/assets/ss/ankasa-findticket.png">
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-<img  width="350"  src="https://raw.githubusercontent.com/Rainbow-io/ankasa-frontend/dev/src/assets/ss/ankasa-mybooking.png">
+### Deployment
 
-</div>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-  
+### `npm run build` fails to minify
 
-
-# Our Team - Teach_Me!
- | profile | Name | Stack | Github | Linkedin |
- | ------- | ---- | ------ | ------ | -------- |
- | ![profile Dzakia][img-Dzakia] | Annisa Dzakia Ramadhina | Fullstack | [Dzakia](https://github.com/dzakia-st3)|[Dzakia](https://www.linkedin.com/) 
- | ![profile Sandi][img-Sandi] | Muhammad Sandi Maulana Y| Backend| [Sandi](https://github.com/muhammadsandi12)|[Sandi](https://www.linkedin.com/) 
- | ![profile Vickri][img-Vickri] | Vickri Fahrurozi | Backend | [Vickri](https://github.com/VickriFahrurozi)|[Vickri](https://www.linkedin.com/in/vickri-fahrurozi-7ba7a9193/?trk=public_profile_samename-profile&originalSubdomain=id) 
- | ![profile Ade][img-Ade] | Ade Ryzki Aprinata | Frontend | [Ade](https://github.com/ade-ryzki)|[Ade](https://www.linkedin.com/in/aderyzki/)
- | ![profile Nahrowi][img-Nahrowi] | Muhammad Nahrowi | Frontend | [Nahrowi](https://github.com/m-nahrowi)|[Nahrowi](https://www.linkedin.com/)
-
-[img-Dzakia]: https://avatars.githubusercontent.com/u/105700671?v=4
-[img-Sandi]: https://avatars.githubusercontent.com/u/69453646?v=4
-[img-Vickri]: https://avatars.githubusercontent.com/u/40363306?v=4
-[img-Ade]: https://avatars.githubusercontent.com/u/95088271?v=4
-[img-Nahrowi]: https://avatars.githubusercontent.com/u/86625224?v=4
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -3,18 +3,51 @@ import ChangeBg from "./components/images/ChangeBg.png"
 import Footer from "../../components/components/Footer"
 import Avatar from "./components/images/Hans.jpg"
 import Navbar from "../../components/components/Navbar"
-import { GetUser } from "../../Redux/Actions/User"
+import { GetUser, UpdateUser  } from "../../Redux/Actions/User"
 import { useDispatch, useSelector } from "react-redux"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+
 
 const Profile = () => {
     const { data, error, loading, isLogin} = useSelector((state) => state.auth)
     const Users = useSelector((state) => state.user)
-    const dispatch = useDispatch()
+    const Update = useSelector((state) => state.updateUser)
+    const [refatch, setRefach] = useState(false)
+    console.log(Users.data)
+    const [formUpdate, setFormUpdate] = useState({
+        'profile_username' : Users.data.profile_username,
+        'profile_name': Users.data.profile_name,
+        'profile_picture': Users.data.profile_picture,
+        'profile_job' : Users.data.profile_job,
+        'profile_about': Users.data.profile_about 
+    })
 
+    const formData = new FormData()
+    formData.append('profile_username', formUpdate.profile_username);
+    formData.append('profile_name', formUpdate.profile_name);
+    formData.append('profile_picture', formUpdate.profile_picture);
+    formData.append('profile_job', formUpdate.profile_job);
+    formData.append('profile_about', formUpdate.profile_about);
+
+    const dispatch = useDispatch()
+    const HandleUpdateUser = (e) =>{
+        console.log(formUpdate, 'ini form update')
+        console.log(data.user_id)
+        dispatch(UpdateUser(formData,data.user_id))
+        if(Update.data.status === 200){
+            alert('Update Profile Success')
+        }
+
+        setRefach(!refatch)
+
+
+    }
+
+    console.log(Users, 'ini users di get')
+   
     useEffect(() => {
         dispatch(GetUser(data.user_id))
-    }, [])
+    }, [refatch])
     
     return (
         <>
@@ -24,18 +57,24 @@ const Profile = () => {
                     <p className="ml-20 mt-20 text-2xl font-bold">Profile</p>
                     <div className="ml-20 mt-10 w-72 h-72 bg-white rounded-2xl flex flex-col shadow-xl">
                         <div className="flex flex-row ml-3 mt-5 mr-1">
-                            <div className="flex flex-row h-20 w-20 rounded-[28px] bg-white border-blue-400 items-center justify-center border-2">
-                                <img src={JoeDaniel} />
+                        <div className="avatar">
+                                <div className="w-16 rounded-lg ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    <img src={`http://localhost:3289/upload/${Users.data.profile_picture}`} />
+                                </div>
                             </div>
+
+                            {/* <div className="flex flex-row h-20 w-20 rounded-[28px] bg-white border-blue-400 items-center justify-center border-2">
+                                <img src={`http://localhost:3289/upload/${Users.data.profile_picture}`} />
+                            </div> */}
                             <div className="flex flex-col ml-5">
-                                <p className="text-lg text-[#2D4379]">@jonathan</p>
-                                <p className="font-bold text-2xl">Joe Daniel</p>
+                                <p className="text-lg text-[#2D4379]">{Users.data.profile_username}</p>
+                                <p className="font-bold text-2xl">{Users.data.profile_name}</p>
                                 <p className="text-lg text-[#376AED]">Member</p>
                             </div>
                         </div>
                         <div className="flex flex-col ml-4 mr-1">
                             <p className="text-base font-bold mt-4 mb-2">About</p>
-                            <p>Madison Blackstone is a director of publisher, with experience managing global teams.</p>
+                            <p>{Users.data.profile_about}</p>
                             <div class="btn-group w-96 mt-8">
                                 <button class="btn bg-[#2151CD] w-20 border-none rounded-lg">
                                     <div className="flex flex-col">
@@ -98,45 +137,77 @@ const Profile = () => {
                             <div className="flex flex-row justify-center mt-28">
                                 <div className="avatar">
                                     <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                        <img src={Avatar} />
+                                        <img src={`http://localhost:3289/upload/${Users.data.profile_picture}`} />
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div className="">
-                        <p className="text-center mt-20 text-lg text-[#7B8BB2]">
-                            Remove profile picture
-                        </p>
+
+                    <div className="flex flex-col justify-center items-center mt-20 text-center">
+                        <span className="btn hover:bg-white border-0 font-extrabold text-gray-700 btn-file w-72 bg-white "> Remove profile picture 
+                        <input type="file" className=""  onChange={(e)=>setFormUpdate((prevData)=>({
+                                    ...prevData,
+                                    profile_picture: e.target.files[0]
+                                }))} />    
+                        </span>  
                     </div>
+
+
+{/* 
+                    <div className="flex flex-col justify-center mt-20 text-center">
+                        <label> Remove profile picture </label>
+                        <input type="file" className="flex items-center text-center text-lg text-[#7B8BB2] ml-96 mt-5"  onChange={(e)=>setFormUpdate((prevData)=>({
+                                    ...prevData,
+                                    profile_picture: e.target.files[0]
+                                }))} />      
+                    </div> */}
+
                     <div className="mt-14 ml-24 mb-20">
                         <div className="flex flex-row justify-between">
                             <div>
                                 <p className="mb-4">Username : </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-info w-96 max-w-xs" />
+                                <input type="text" defaultValue={Users.data.profile_username} class="input input-bordered input-info w-96 max-w-xs" onChange={(e)=>setFormUpdate((prevData)=>({
+                                    ...prevData,
+                                    profile_username: e.target.value
+                                }))} />
                             </div>
                             <div className="mr-20">
                                 <p className="mb-4">Name : </p>
-                                <input type="text" placeholder="@jonathan" class="input input-bordered input-info w-96 max-w-xs" />
+                                <input type="text" defaultValue={Users.data.profile_name} class="input input-bordered input-info w-96 max-w-xs" onChange={(e)=>setFormUpdate((prevData)=>({
+                                    ...prevData,
+                                    profile_name: e.target.value
+                                }))} />
                             </div>
                         </div>
 
                         <div className="flex flex-row justify-between mt-10">
                             <div>
                                 <p className="mb-4">Email : </p>
-                                <input type="text" placeholder="jonathan@gmail.com" class="input input-bordered input-info w-96 max-w-xs" />
+                                <input type="text" readOnly defaultValue={Users.data.account_email} class="input input-bordered input-info w-96 max-w-xs" onChange={(e)=>setFormUpdate((prevData)=>({
+                                    ...prevData,
+                                    account_email: e.target.value
+                                }))} />
                             </div>
                             <div className="mr-20">
                                 <p className="mb-4">Job : </p>
-                                <input type="text" placeholder="Reporter" class="input input-bordered input-info w-96 max-w-xs" />
+                                <input type="text" defaultValue={Users.data.profile_job} class="input input-bordered input-info w-96 max-w-xs" onChange={(e)=>setFormUpdate((prevData)=>({
+                                    ...prevData,
+                                    profile_job: e.target.value
+                                }))} />
+
                             </div>
                         </div>
 
                         <div className="flex flex-row justify-between mt-10">
                             <div>
                                 <p className="mb-4">About : </p>
-                                <textarea className="textarea textarea-info w-80 h-28" placeholder="Madison Blackstone is a director of publisher, with experience managing global teams.">
+                                <textarea className="textarea textarea-info w-80 h-28" defaultValue={Users.data.profile_about} onChange={(e)=>setFormUpdate((prevData  )=>(
+                                    {
+                                    ...prevData,
+                                    profile_about: e.target.value
+                                }))}>
                                 </textarea>
                             </div>
                             {/* <div className="mr-20 mt-10">
@@ -153,7 +224,7 @@ const Profile = () => {
                                 </textarea>
                             </div> */}
                             <div className="mr-20 mt-1">
-                                <button type="button" className="input-info w-96 h-14 max-w-xs bg-[#0D253C] text-white rounded-xl">
+                                <button type="button" className="input-info w-96 h-14 max-w-xs bg-[#0D253C] text-white rounded-xl" onClick={HandleUpdateUser}>
                                     Save Change
                                 </button>
                             </div>

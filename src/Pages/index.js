@@ -5,6 +5,8 @@ import Forgot from "./Forgot";
 import Categoryy from './Categoryy';
 import ChangePassword from './ChangePassword';
 import Profile from './Profile'
+import ViewArticel from './ViewArticle'
+import Notification from "./Notification";
 
 
 
@@ -15,5 +17,7 @@ export {
     Home,
     Categoryy,
     ChangePassword,
-    Profile
+    Profile,
+    ViewArticel,
+    Notification
 }

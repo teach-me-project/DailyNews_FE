@@ -1,15 +1,36 @@
 import Navbar from "../../components/components/Navbar";
 import bgMain from "../../components/images/typing.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Filter from "../../components/images/Filter.svg";
 import covid from "../../components/images/covid-19.png";
 import finger from "../../components/images/jempol.svg";
 import timer from "../../components/images/jam.svg";
 import saves from "../../components/images/save.svg";
 import Footer from "../../components/components/Footer";
-import NewFooter from "./../../components/components/NewFooter";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const Article = () => {
+  const {isLogin} = useSelector((state) => state.auth)
+  let navigate = useNavigate()
+  
+  const handleWrite = (e) => {
+    e.preventDefault()
+    if(isLogin === true) {
+      navigate('/write-article', {replace: true})
+  } else {
+      navigate('/signin', {replace: true})
+  }
+}
+  
+  // useEffect(() => {
+  //     if(isLogin === true) {
+  //         navigate('/write-article', {replace: true})
+  //     } else {
+  //         navigate('/signin', {replace: true})
+  //     }
+  // }, [isLogin])
+  
   return (
     <>
       <Navbar />
@@ -24,11 +45,9 @@ const Article = () => {
               <br /> in a month or you can request to be an author if you <br />{" "}
               have been a member for three months.
             </p>
-            <Link to="/signin">
-              <button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-white font-bold text-xl hover:text-white leading-tight  rounded shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out ">
+              <button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-white font-bold text-xl hover:text-white leading-tight  rounded shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleWrite}>
                 Start Writing
               </button>
-            </Link>
           </div>
         </div>
 
@@ -315,7 +334,7 @@ const Article = () => {
         </div>
       </div>
       {/* </div> */}
-      <NewFooter />
+      <Footer />
     </>
   );
 };

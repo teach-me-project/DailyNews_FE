@@ -1,7 +1,7 @@
 import bgMain from "../../components/images/roman.png";
 import SortBy from "../../components/components/Sortby";
 import ArticleCategory from "../../components/components/ArticleCategory";
-import NewFooter from './../../components/components/NewFooter';
+import Footer from './../../components/components/Footer';
 import Navbar from './../../components/components/Navbar';
 
 const Category = () => {
@@ -25,7 +25,7 @@ const Category = () => {
       <div className="justify-center text-center"><p className=" my-10 text-[#CDCDCD] font-['Avenir']">Click the category to explore articles</p></div>
       <ArticleCategory/>
       <div className="justify-center text-center"><p className=" my-10 text-[#CDCDCD] font-['Avenir']">We have no category left</p></div>
-      <NewFooter/>
+      <Footer/>
     </>
   );
 };

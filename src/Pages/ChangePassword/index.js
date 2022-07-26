@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NewFooter from './../../components/components/NewFooter';
+import Footer from './../../components/components/Footer';
 
 const ChangePassword = () => {
     return (
@@ -43,7 +43,7 @@ const ChangePassword = () => {
                     </div>
                 </div>
             </div>
-            <NewFooter/>
+            <Footer/>
 
         </>
     )

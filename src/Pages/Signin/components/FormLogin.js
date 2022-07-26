@@ -21,6 +21,7 @@ const FormLogin = () => {
         e.preventDefault()
         dispatch(AuthLogin(formLogin))
     }
+
     useEffect(() => {
         if(isLogin === true) {
             navigate('/', {replace: true})
@@ -38,9 +39,9 @@ const FormLogin = () => {
                 <h1 className="text-4xl font-['Mulish'] mb-6">Login</h1>
                 <form onSubmit={handleLogin}>
                     <div>
-                        <p className=" font-['Mulish'] text-base font-semibold text-[#388087] leading-5 mb-3">Email Address :</p>
+                        <p className=" font-['Mulish'] text-base font-semibold text-black leading-5 mb-3">Email Address :</p>
                         <input type="text"
-                            className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
+                            className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-black bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
                             id="exampleFormControlInput2" placeholder="Enter your email address" onChange={(e) => setFormLogin((prevData) => ({
                                 ...prevData,
                                 email: e.target.value

@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Articles from "./Pages/Article";
 import WriteArticle from "./Pages/WriteArticle";
-import Notification from "./Pages/Notification"
-import { Signup, Signin, Home, Forgot, Categoryy, ChangePassword, Profile  } from "./Pages";
+import { Signup, Signin, Home, Forgot, Categoryy, ChangePassword, Profile, Notification, ViewArticel } from "./Pages";
 
 
 const MainNavigation = () => {
@@ -14,7 +13,9 @@ const MainNavigation = () => {
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/signin" element={<Signin />}></Route>
           <Route path="/forgot" element={<Forgot />}></Route>   
-          <Route path="/article" element={<Articles />}></Route>
+          <Route path="/article" element={<Articles />}>
+            <Route path=":id" element={<ViewArticel/>}/>
+          </Route>
           <Route path="/write-article" element={<WriteArticle />}></Route>
           <Route path="/forgot" element={<Forgot />}></Route>
           <Route path="/Category" element={<Categoryy />}></Route>
