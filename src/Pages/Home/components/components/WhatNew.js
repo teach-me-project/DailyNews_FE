@@ -17,6 +17,7 @@ import massenger from '../images/fb_ms.svg';
 import gmail from '../images/gmail.svg';
 import hutan from '../images/Hutan.jpeg';
 import { GetRecent } from '../../../../Redux/Actions/RecentPost';
+import { GetPopular } from '../../../../Redux/Actions/PopularPost';
 
 const WhatNew = () => {
 	const dispatch = useDispatch();
@@ -37,10 +38,16 @@ const WhatNew = () => {
 		);
 	}, [refetch, filter]);
 
-	const {data : datas} = useSelector((state) => state.recent)
-	console.log(datas, 'cek datas di what new')
+	const { data: data2 } = useSelector((state) => state.recent)
+	console.log(data2, 'cek data2 di what new')
 	useEffect(() => {
 		dispatch(GetRecent())
+	}, [])
+
+	const { data: data3 } = useSelector((state) => state.popular)
+	console.log(data3, 'cek data3 popular')
+	useEffect(() => {
+		dispatch(GetPopular())
 	}, [])
 
 	const { data, error, loading } = useSelector((state) => state.postingan);
@@ -56,7 +63,7 @@ const WhatNew = () => {
 		return <EmptyState />;
 	}
 
-	const handlePaginate = (index, page) => {
+	const handlePaginate = (index) => {
 		setFilter((prevState) => ({ ...prevState, page: index + 1 }));
 		query.set(`/home?page=${index + 1}`);
 		setQuery(query);
@@ -171,7 +178,7 @@ const WhatNew = () => {
 													{`${item.post_title}`}
 												</h1>
 												<p className='mt-5 mr-20 text-justify'>
-													{`${item.post_fill.slice(0,100)}...`}
+													{`${item.post_fill.slice(0, 100)}...`}
 												</p>
 												<p className='mt-5 text-justify'>
 													{`${item.post_category}`}
@@ -226,14 +233,14 @@ const WhatNew = () => {
 							RECENT POST
 						</h1>
 						<div>
-							{datas?.result?.loading ? (
+							{data2?.result?.loading ? (
 								<Loading />
 							) : (
 								<div className='flex flex-col mt-9 ml-9'>
-									{!datas?.result?.length ? (
+									{!data2?.result?.length ? (
 										<EmptyState />
 									) : (
-										datas?.result?.map((item) => {
+										data2?.result?.map((item) => {
 											// useParams(item.post_id)
 											return (
 												<div className='flex flex-row mt-10'>
@@ -334,6 +341,68 @@ const WhatNew = () => {
 						<h1 className='font-extrabold text-lg divider w-full'>
 							POST POPULAR
 						</h1>
+						<div>
+							{data3?.result?.loading ? (
+								<Loading />
+							) : (
+								<div className='flex flex-col mt-9 ml-9'>
+									{!data3?.result?.length ? (
+										<EmptyState />
+									) : (
+										data3?.result?.map((item) => {
+											// useParams(item.post_id)
+											return (
+												<div className='flex flex-row mt-10'>
+													<div className='w-22'>
+														<img className='w-40 h-28' src={`http://localhost:3289/upload/${item.post_cover}`} />
+													</div>
+													<div className='flex flex-col ml-5 w-44'>
+														<h1 className='font-extrabold text-xs'>
+															{`${item.post_title}`}
+														</h1>
+														<p className='mt-9 text-gray-500 text-xs'>
+															{`${item.created_at.slice(
+																0,
+																10
+															)
+																}`}
+														</p>
+													</div>
+												</div>
+											);
+										})
+									)}
+								</div>
+							)}
+						</div>
+
+						{/* <div className='flex flex-row mt-9 ml-9'>
+							<div className='w-22'>
+								<img className='w-40 h-28' src={hutan} />
+							</div>
+							<div className='flex flex-col ml-5 w-44'>
+								<h1 className='font-extrabold text-xs'>
+									Exquistie Admitting Cordially September Newspapper
+								</h1>
+								<p className='mt-9 text-gray-500 text-xs'>
+									Desember 25, 2022
+								</p>
+							</div>
+						</div> */}
+
+						{/* <div className='flex flex-row mt-9 ml-9'>
+							<div className='w-22'>
+								<img className='w-40 h-28' src={hutan} />
+							</div>
+							<div className='flex flex-col ml-5 w-44'>
+								<h1 className='font-extrabold text-xs'>
+									Exquistie Admitting Cordially September Newspapper
+								</h1>
+								<p className='mt-9 text-gray-500 text-xs'>
+									Desember 25, 2022
+								</p>
+							</div>
+						</div>
 						<div className='flex flex-row mt-9 ml-9'>
 							<div className='w-22'>
 								<img className='w-40 h-28' src={hutan} />
@@ -361,19 +430,6 @@ const WhatNew = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-row mt-9 ml-9'>
-							<div className='w-22'>
-								<img className='w-40 h-28' src={hutan} />
-							</div>
-							<div className='flex flex-col ml-5 w-44'>
-								<h1 className='font-extrabold text-xs'>
-									Exquistie Admitting Cordially September Newspapper
-								</h1>
-								<p className='mt-9 text-gray-500 text-xs'>
-									Desember 25, 2022
-								</p>
-							</div>
-						</div>
 
 						<div className='flex flex-row mt-9 ml-9'>
 							<div className='w-22'>
@@ -387,21 +443,7 @@ const WhatNew = () => {
 									Desember 25, 2022
 								</p>
 							</div>
-						</div>
-
-						<div className='flex flex-row mt-9 ml-9'>
-							<div className='w-22'>
-								<img className='w-40 h-28' src={hutan} />
-							</div>
-							<div className='flex flex-col ml-5 w-44'>
-								<h1 className='font-extrabold text-xs'>
-									Exquistie Admitting Cordially September Newspapper
-								</h1>
-								<p className='mt-9 text-gray-500 text-xs'>
-									Desember 25, 2022
-								</p>
-							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

@@ -15,6 +15,10 @@
   #f6f6f2
 } */
 
+* {
+  --tw-ring-color: none;
+}
+
 body {
   margin: 0;
   font-style: normal;

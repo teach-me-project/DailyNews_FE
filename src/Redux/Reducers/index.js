@@ -9,7 +9,7 @@ import UpdateUser from "./UpdateUser"
 import Notification from "./Notification"
 import PostArticle from "./PostArticle"
 import GetArticleById  from "./GetArticleById"
-
+import PopularPost from "./PopularPost"
 
 
 const rootReducer = combineReducers ({
@@ -22,7 +22,8 @@ const rootReducer = combineReducers ({
   updateUser: UpdateUser,
   notification: Notification,
   postArticle: PostArticle,
-  getArticleById: GetArticleById
+  getArticleById: GetArticleById,
+  popular: PopularPost,
 })
 
 export default rootReducer
