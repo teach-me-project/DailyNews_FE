@@ -127,7 +127,7 @@ const Navbar = () => {
 						</div>
 						<div className='px-5 '>
 							<Link to='/signin'>
-								<button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-white font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
+								<button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-black hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-400 active:shadow-lg transition duration-150 ease-in-out">
 									Login
 								</button>
 							</Link>

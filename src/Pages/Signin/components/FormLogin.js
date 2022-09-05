@@ -41,7 +41,7 @@ const FormLogin = () => {
                     <div>
                         <p className=" font-['Mulish'] text-base font-semibold text-black leading-5 mb-3">Email Address :</p>
                         <input type="text"
-                            className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-black bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
+                            className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-black bg-white bg-clip-padding border border-solid rounded-[10px] transition ease-in-out mb-5 focus:bg-white focus:outline-none"
                             id="exampleFormControlInput2" placeholder="Enter your email address" onChange={(e) => setFormLogin((prevData) => ({
                                 ...prevData,
                                 email: e.target.value
@@ -57,9 +57,9 @@ const FormLogin = () => {
                         }))}/>
                     </div>
                     {loading ? (
-                    <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleLogin} disabled={true}>Loading..</button>
+                    <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-black hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-400 active:shadow-lg transition duration-150 ease-in-out" onClick={handleLogin} disabled={true}>Loading</button>
                     ):(
-                    <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleLogin}>Login</button>
+                    <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-black hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-400 active:shadow-lg transition duration-150 ease-in-out" onClick={handleLogin}>Login</button>
                     )} 
                     {/* {alert(`${error.message}`)
                     // `${error.message}`
@@ -84,7 +84,7 @@ const FormLogin = () => {
                 </p> <hr />
                 <Link to={'/signup'}>
                     <button type="button"
-                    className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
+                    className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-amber-400 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-black active:shadow-lg transition duration-150 ease-in-out">
                     Sign Up Now
                     </button>
                 </Link>

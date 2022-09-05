@@ -22,12 +22,15 @@ const GetPostError = (error) => {
 	};
 };
 
-export const GetPost = (a, b, c, d) => {
+export const GetPost = (params) => {
+
+	const {limit, page, order_by, sort} = params
+
 	return (dispatch) => {
 		dispatch(GetPostRequest());
 		axios({
 			method: 'GET',
-			url: `http://localhost:3289/api/v1/post/accepted?limit=${a}&page=${b}&order_by=${c}&sort=${d}`,
+			url: `http://localhost:3289/api/v1/post/accepted?limit=${limit ? `${limit}`:2}&page=${page}&order_by=${order_by ? `${order_by}`:`created_at`}&sort=${sort ? `${sort}`:`DESC`}`,
 		})
 			.then((res) => {
 				dispatch(GetPostSuccess(res.data.list.post));

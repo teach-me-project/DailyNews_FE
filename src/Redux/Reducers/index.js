@@ -4,7 +4,7 @@ import AuthRegister from './AuthRegister'
 import User from './User'
 import Comment from './Comment'
 import Postingan from './Postingan'
-import Page from "./Postingan(page)"
+import RecentPost from "./RecentPost"
 import UpdateUser from "./UpdateUser"
 import Notification from "./Notification"
 import PostArticle from "./PostArticle"
@@ -18,7 +18,7 @@ const rootReducer = combineReducers ({
   user: User,
   comment: Comment ,
   postingan: Postingan,
-  page: Page,
+  recent: RecentPost,
   updateUser: UpdateUser,
   notification: Notification,
   postArticle: PostArticle,

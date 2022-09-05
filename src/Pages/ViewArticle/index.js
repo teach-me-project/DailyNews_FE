@@ -14,8 +14,6 @@ const ViewArticle = () => {
     const dispatch = useDispatch()
     // const { data, error, loading, isLogin} = useSelector((state) => state.getArticleById)
     
-    
-    
     useEffect(() => {
         // dispatch(GetArticleByID())
         // console.log(data.list.post[0])

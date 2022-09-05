@@ -1,8 +1,6 @@
 const initialState = {
     loading: false,
-    data: {
-        
-    },
+    data: {},
     error: null,
     isRegister: false
 }

@@ -44,7 +44,7 @@ const FormSignup = () => {
                                 Email Address :
                             </p>
                             <input type="text"
-                                className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
+                                className="form-control block w-[400px] px-3 py-2 text-sm font-normal bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:outline-none"
                                 id="exampleFormControlInput2" placeholder="Enter your email address" onChange={(e) => setFormRegister((prevData) => ({
                                     ...prevData,
                                     email: e.target.value
@@ -56,7 +56,7 @@ const FormSignup = () => {
                                 Password :
                             </p>
                             <input type="password"
-                                className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
+                                className="form-control block w-[400px] px-3 py-2 text-sm font-normal bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:outline-none"
                                 id="exampleFormControlInput2" placeholder="Enter your password" onChange={(e) => setFormRegister((prevData) => ({
                                     ...prevData,
                                     password: e.target.value
@@ -67,16 +67,16 @@ const FormSignup = () => {
                                 Phone Number :
                             </p>
                             <input type="text"
-                               className="form-control block w-[400px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
+                               className="form-control block w-[400px] px-3 py-2 text-sm font-normal bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:outline-none"
                                 id="exampleFormControlInput2" placeholder="Enter your phone number" onChange={(e) => setFormRegister((prevData) => ({
                                     ...prevData,
                                     phone_number: e.target.value
                                 }))}/>
                         </div>
                         {loading ? (
-                        <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleRegister} disabled={true}>Loading..</button>
+                        <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-black hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-500 active:shadow-lg transition duration-150 ease-in-out" onClick={handleRegister} disabled={true}>Loading..</button>
                         ):(
-                        <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleRegister}>Sign Up</button>
+                        <button className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-black hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-500 active:shadow-lg transition duration-150 ease-in-out" onClick={handleRegister}>Sign Up</button>
                         )}
                     </form>
                     {/* <div className="button mb-5 mt-6">
@@ -99,7 +99,7 @@ const FormSignup = () => {
                         </p> <hr />
                         <Link to={'sigin'}>
                             <button type="button"
-                                className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleRegister}>
+                                className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-amber-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-black active:shadow-lg transition duration-150 ease-in-out" onClick={handleRegister}>
                                 Login Here
                             </button>
                         </Link>

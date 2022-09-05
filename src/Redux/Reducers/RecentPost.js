@@ -2,25 +2,24 @@
 
 const initialState = {
 	loading: false,
-	data: {},
-	totalpage: '',
+	datas: {},
 	error: null,
 };
 
 const Fetch = (state = initialState, action = {}) => {
 	switch (action.type) {
-		case 'GET_PAGE_REQUEST':
+		case 'GET_RECENT_REQUEST':
 			return { ...state, loading: true };
-		case 'GET_PAGE_ERROR':
+		case 'GET_RECENT_ERROR':
 			return {
 				...state,
 				loading: false,
-				data: state.data,
+				datas: state.datas,
 				error: action.payload,
 			};
-		case 'GET_PAGE_SUCCESS':
-			console.log(action.payload, 'cek post reducer');
-			return { ...state, loading: false, data: action.payload, error: null };
+		case 'GET_RECENT_SUCCESS':
+			console.log(action.payload, 'cek post reducer page');
+			return { ...state, loading: false, datas: action.payload, error: null };
 		default:
 			return state;
 	}

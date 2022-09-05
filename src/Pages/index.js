@@ -5,7 +5,7 @@ import Forgot from "./Forgot";
 import Categoryy from './Categoryy';
 import ChangePassword from './ChangePassword';
 import Profile from './Profile'
-import ViewArticel from './ViewArticle'
+import ViewArticle from './ViewArticle';
 import Notification from "./Notification";
 
 
@@ -18,6 +18,6 @@ export {
     Categoryy,
     ChangePassword,
     Profile,
-    ViewArticel,
+    ViewArticle,
     Notification
 }

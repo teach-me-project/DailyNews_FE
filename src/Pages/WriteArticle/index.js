@@ -21,8 +21,6 @@ const WriteArticle = () => {
         'post_title': '',
         'post_category': '',
         'post_fill': '',
-
-
     })
 
     const formData = new FormData()

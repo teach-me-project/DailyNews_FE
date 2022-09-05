@@ -37,10 +37,7 @@ const Profile = () => {
         if(Update.data.status === 200){
             alert('Update Profile Success')
         }
-
         setRefach(!refatch)
-
-
     }
 
     console.log(Users, 'ini users di get')

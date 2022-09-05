@@ -7,7 +7,7 @@ const CoverLeft = () => {
         <div className='cover-left'>
             <img className='img-left' src={bg} alt='cover'/>
             <div className='content-img'>
-                <h1>News</h1>
+                {/* <h1>News</h1>
                 <h1>Today</h1>
                 <h2>newstoday@mail.com</h2>
                 <div className='text-footer'>
@@ -19,7 +19,7 @@ const CoverLeft = () => {
                         <h2>Be an author</h2>
                         <h2>FAQ</h2>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </>

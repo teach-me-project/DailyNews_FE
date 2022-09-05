@@ -65,7 +65,7 @@ code {
 
 .img-left {
   position: absolute;
-  width: 44%;
+  width: 42%;
   height: 100vh;
 }
 
@@ -75,7 +75,7 @@ code {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: linear-gradient(225deg, rgba(56, 128, 135, 0.9), rgba(186, 223, 231, 0.8)) ;
+  /* background: linear-gradient(225deg, rgba(56, 128, 135, 0.9), rgba(186, 223, 231, 0.8)) ; */
   z-index: 2;
   height: 100vh;
 }
@@ -239,7 +239,7 @@ code {
 form input {
   border-radius: 10px;
   padding: 5% 0% 5% 0%;
-  box-shadow: 0px 0px 5px #388087;
+  /* box-shadow: 0px 0px 5px #388087; */
   font-size: medium;
   margin: 5% 0 5% 0;
 }

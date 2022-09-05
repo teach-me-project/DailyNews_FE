@@ -45,7 +45,7 @@ const Article = () => {
               <br /> in a month or you can request to be an author if you <br />{" "}
               have been a member for three months.
             </p>
-              <button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-white font-bold text-xl hover:text-white leading-tight  rounded shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out" onClick={handleWrite}>
+              <button className="inline-block w-[148px] font-['Mulish'] h-12 py-2.5  text-white font-bold text-xl hover:text-black leading-tight  rounded shadow-md hover:bg-amber-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-black active:shadow-lg transition duration-150 ease-in-out" onClick={handleWrite}>
                 Start Writing
               </button>
           </div>
