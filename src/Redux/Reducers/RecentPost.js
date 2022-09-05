@@ -2,7 +2,7 @@
 
 const initialState = {
 	loading: false,
-	datas: {},
+	data: {},
 	error: null,
 };
 
@@ -14,12 +14,13 @@ const Fetch = (state = initialState, action = {}) => {
 			return {
 				...state,
 				loading: false,
-				datas: state.datas,
+				data: state.data,
 				error: action.payload,
+				
 			};
 		case 'GET_RECENT_SUCCESS':
-			console.log(action.payload, 'cek post reducer page');
-			return { ...state, loading: false, datas: action.payload, error: null };
+			console.log(action.payload, 'cek post reducer di recentPost');
+			return { ...state, loading: false, data: action.payload, error: null };
 		default:
 			return state;
 	}

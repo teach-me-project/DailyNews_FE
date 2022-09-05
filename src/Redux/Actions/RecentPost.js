@@ -22,18 +22,16 @@ const GetRecentError = (error) => {
 	};
 };
 
-export const GetRecent = (params) => {
-	const {limit, order_by, sort} = params
-
+export const GetRecent = () => {
 	return (dispatch) => {
 		dispatch(GetRecentRequest());
 		axios({
 			method: 'GET',
-			url: `http://localhost:3289/api/v1/post/accepted?limit=${limit ? `${limit}`:2}&order_by=${order_by ? `${order_by}`:`created_at`}&sort=${sort ? `${sort}`:`DESC`}`,
+			url: 'http://localhost:3289/api/v1/post/accepted?limit=3&order_by=created_at&page=1&sort=DESC',
 		})
 			.then((res) => {
 				dispatch(GetRecentSuccess(res.data.list.post));
-				console.log(res.data, 'cek postingan action');
+				console.log(res.data.list, 'cek postingan action recent');
 			})
 			.catch((err) => {
 				dispatch(GetRecentError(err.response.data))(

@@ -30,7 +30,7 @@ const ChangePassword = () => {
                     </form>
                     <div className="button mb-8">
                         <button type="button"
-                            className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-white font-bold text-xl hover:text-black leading-tight  rounded-lg shadow-md hover:bg-[#badfe7] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out">
+                            className="inline-block w-[400px] font-['Mulish'] h-10 py-2 bg- text-black font-bold text-xl hover:text-white leading-tight  rounded-lg shadow-md hover:bg-black hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-amber-500 active:shadow-lg transition duration-150 ease-in-out">
                             Confirm
                         </button>
                     </div>

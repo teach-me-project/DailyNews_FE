@@ -16,6 +16,7 @@ import twitter from '../images/tw.svg';
 import massenger from '../images/fb_ms.svg';
 import gmail from '../images/gmail.svg';
 import hutan from '../images/Hutan.jpeg';
+import { GetRecent } from '../../../../Redux/Actions/RecentPost';
 
 const WhatNew = () => {
 	const dispatch = useDispatch();
@@ -35,6 +36,12 @@ const WhatNew = () => {
 			GetPost(filter)
 		);
 	}, [refetch, filter]);
+
+	const {data : datas} = useSelector((state) => state.recent)
+	console.log(datas, 'cek datas di what new')
+	useEffect(() => {
+		dispatch(GetRecent())
+	}, [])
 
 	const { data, error, loading } = useSelector((state) => state.postingan);
 	useParams(data.post_id);
@@ -64,13 +71,13 @@ const WhatNew = () => {
 	// };
 
 
-	const handleFilter = async (e) => {
-		e.preventDefault();
-		dispatch(
-			GetPost(filter)
-		);
-		setRefecth(!refetch);
-	};
+	// const handleFilter = async (e) => {
+	// 	e.preventDefault();
+	// 	dispatch(
+	// 		GetPost(filter)
+	// 	);
+	// 	setRefecth(!refetch);
+	// };
 
 	return (
 		<>
@@ -219,14 +226,14 @@ const WhatNew = () => {
 							RECENT POST
 						</h1>
 						<div>
-							{data?.result?.loading ? (
+							{datas?.result?.loading ? (
 								<Loading />
 							) : (
 								<div className='flex flex-col mt-9 ml-9'>
-									{!data?.result?.length ? (
+									{!datas?.result?.length ? (
 										<EmptyState />
 									) : (
-										data?.result?.map((item) => {
+										datas?.result?.map((item) => {
 											// useParams(item.post_id)
 											return (
 												<div className='flex flex-row mt-10'>

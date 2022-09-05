@@ -112,12 +112,12 @@ const GetArticleByIdError = (error) => {
 	};
 };
 
-export const GetArticleByID = () => {
+export const GetArticleByID = (id) => {
 	return (dispatch) => {
 		dispatch(GetArticleByIdRequest());
 		axios({
 			method: 'GET',
-			url: `http://localhost:3289/api/v1/post/id?post_id=1`,
+			url: `http://localhost:3289/api/v1/post/id?post_id=${id}`,
 		})
 			.then((res) => {
 				dispatch(GetArticleByIdSuccess(res.data));
