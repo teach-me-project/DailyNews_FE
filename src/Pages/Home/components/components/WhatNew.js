@@ -243,23 +243,25 @@ const WhatNew = () => {
 										data2?.result?.map((item) => {
 											// useParams(item.post_id)
 											return (
-												<div className='flex flex-row mt-10'>
-													<div className='w-22'>
-														<img className='w-40 h-28' src={`http://localhost:3289/upload/${item.post_cover}`} />
+												<Link to={`/viewArticle/${item.post_id}`}>
+													<div className='flex flex-row mt-10'>
+														<div className='w-22'>
+															<img className='w-40 h-28' src={`http://localhost:3289/upload/${item.post_cover}`} />
+														</div>
+														<div className='flex flex-col ml-5 w-44'>
+															<h1 className='font-extrabold text-xs'>
+																{`${item.post_title}`}
+															</h1>
+															<p className='mt-9 text-gray-500 text-xs'>
+																{`${item.created_at.slice(
+																	0,
+																	10
+																)
+																	}`}
+															</p>
+														</div>
 													</div>
-													<div className='flex flex-col ml-5 w-44'>
-														<h1 className='font-extrabold text-xs'>
-															{`${item.post_title}`}
-														</h1>
-														<p className='mt-9 text-gray-500 text-xs'>
-															{`${item.created_at.slice(
-																0,
-																10
-															)
-																}`}
-														</p>
-													</div>
-												</div>
+												</Link>
 											);
 										})
 									)}
@@ -352,23 +354,25 @@ const WhatNew = () => {
 										data3?.result?.map((item) => {
 											// useParams(item.post_id)
 											return (
-												<div className='flex flex-row mt-10'>
-													<div className='w-22'>
-														<img className='w-40 h-28' src={`http://localhost:3289/upload/${item.post_cover}`} />
+												<Link to={`/viewArticle/${item.post_id}`}>
+													<div className='flex flex-row mt-10'>
+														<div className='w-22'>
+															<img className='w-40 h-28' src={`http://localhost:3289/upload/${item.post_cover}`} />
+														</div>
+														<div className='flex flex-col ml-5 w-44'>
+															<h1 className='font-extrabold text-xs'>
+																{`${item.post_title}`}
+															</h1>
+															<p className='mt-9 text-gray-500 text-xs'>
+																{`${item.created_at.slice(
+																	0,
+																	10
+																)
+																	}`}
+															</p>
+														</div>
 													</div>
-													<div className='flex flex-col ml-5 w-44'>
-														<h1 className='font-extrabold text-xs'>
-															{`${item.post_title}`}
-														</h1>
-														<p className='mt-9 text-gray-500 text-xs'>
-															{`${item.created_at.slice(
-																0,
-																10
-															)
-																}`}
-														</p>
-													</div>
-												</div>
+												</Link>
 											);
 										})
 									)}
