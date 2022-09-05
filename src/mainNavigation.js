@@ -14,8 +14,8 @@ const MainNavigation = () => {
           <Route path="/signin" element={<Signin />}></Route>
           <Route path="/forgot" element={<Forgot />}></Route>   
           <Route path="/article" element={<Articles />}></Route>
-          <Route path="/viewArticle" element={<ViewArticle />}>
-            <Route path=":id" element={<ViewArticle/>}/>
+          <Route path="/viewArticle/:id" element={<ViewArticle />}>
+            {/* <Route path=":id" element={<ViewArticle/>}/> */}
           </Route>
           <Route path="/write-article" element={<WriteArticle />}></Route>
           <Route path="/forgot" element={<Forgot />}></Route>
