@@ -4,11 +4,13 @@ import { GetUser } from "../../Redux/Actions/User"
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 const Navbar = () => {
 	let navigate = useNavigate();
 	const { data, error, loading, isLogin } = useSelector((state) => state.auth);
 	const Users = useSelector((state) => state.user);
+	console.log(Users.data[0]?.profile_picture, 'cek data di navbar')
 	const dispatch = useDispatch();
 
 	useEffect(() => {
@@ -86,7 +88,7 @@ const Navbar = () => {
 							<label tabindex='0' className='btn btn-ghost btn-circle avatar'>
 								<div className='w-10 rounded-full'>
 									<img
-										src={`http://localhost:3289/upload/${Users.data.profile_picture}`}
+										src={`http://localhost:3289/upload/${Users.data[0]?.profile_picture}`}
 										alt=''
 									/>
 								</div>
@@ -111,6 +113,12 @@ const Navbar = () => {
 								<li
 									onClick={() => {
 										dispatch(AuthLogout());
+										Swal.fire({
+											icon: 'success',
+											title: '',
+											text: 'Logout Success',
+										})
+										navigate('/')
 									}}
 								>
 									<p>Logout</p>

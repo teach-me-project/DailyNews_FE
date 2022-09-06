@@ -39,9 +39,9 @@ const ViewArticle = () => {
         <>
             <NavbarLogin />
             <div>
-                <div className="text-center mt-20">
+                {/* <div className="text-center mt-20">
                     <h1 className="font-bold text-2xl">View Article</h1>
-                </div>
+                </div> */}
                 <Link to={"/"} >
                     <div className="flex flex-row items-center mb-10 ml-20 mt-0">
                         <img className="w-3 mr-5" src={arrow} />
@@ -56,7 +56,7 @@ const ViewArticle = () => {
 
                     <div className="avatar">
                         <div className="w-72 rounded-lg ring ring-offset-base-100 ring-offset-1 border-2 border-black">
-                            <img src={`http://localhost:3289/upload/${dataArticle.post_cover}`} />
+                            <img src={`http://localhost:3289/upload/${dataArticle?.post_cover}`} />
                         </div>
                     </div>
                     {/* <div>
@@ -65,10 +65,10 @@ const ViewArticle = () => {
                     {/* detail */}
                     <div className="ml-24 flex flex-col w-96">
                         <h1 className="font-extrabold text-3xl">
-                           {dataArticle.post_title}
+                           {dataArticle?.post_title}
                         </h1>
                         <p className="font-bold text-black text-xl mt-10">
-                           {dataAuthor.profile_name} - Author
+                           {dataAuthor?.profile_name} - Author
                         </p>
                         <p className="font-bold text-gray-400 mt-5">
                             Wed, March 3rd 2021
@@ -77,7 +77,7 @@ const ViewArticle = () => {
                             <div className="flex flex-row items-center mr-5">
                                 <img className="ml-3 mr-2 w-7" src={finger} />
                                 <p className="font-bold">
-                                    {dataArticle.like_count}
+                                    {dataArticle?.like_count}
                                     </p>
                             </div>
                             <img className="w-5" src={save} />
@@ -92,7 +92,7 @@ const ViewArticle = () => {
                 {/* text full */}
                 <div className="mt-24 mb-24">
                     <p className="flex text-justify mx-72">
-                      {dataArticle.post_fill}
+                      {dataArticle?.post_fill}
                     </p>
                 </div>
             </div>

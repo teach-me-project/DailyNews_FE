@@ -35,7 +35,7 @@ export const AuthLogin = (formData) => {
                 dispatch(LoginSuccess(res.data.data))
             })
         .catch((err)=> {
-                dispatch(LoginError(alert(err.response.data.message)))
+                dispatch(LoginError(alert(err.response.data)))
                 })
                 // dispatch(LoginSuccess({
                 //     email: 'test@gmail.com',

@@ -27,16 +27,16 @@ export const GetUser = (id) => {
             method: "GET",
             url: `http://localhost:3289/api/v1/users/${id}`,
         })
-        .then ((res) => {
-            dispatch(GetUserSuccess(res.data.data))
-        })
-        .catch((err)=> {
-            dispatch(GetUserError(err.response.data))
-        })
-                // dispatch(GetUserSuccess({
-                //     email: 'test@gmail.com',
-                //     password: 'test1'
-                // }))
+            .then((res) => {
+                dispatch(GetUserSuccess(res.data.data))
+            })
+            .catch((err) => {
+                dispatch(GetUserError(err.response.data))
+            })
+        // dispatch(GetUserSuccess({
+        //     email: 'test@gmail.com',
+        //     password: 'test1'
+        // }))
     }
 }
 
@@ -61,23 +61,32 @@ const UpdateUserError = (error) => {
     }
 }
 
-export const UpdateUser = (formData,id) => {
+export const UpdateUser = (formUpdate, id) => {
+    console.log (id, 'cek id di action')
     return (dispatch) => {
         dispatch(UpdateUserRequest())
-        console.log(formData, 'form data dari action')
-        
+        console.log(formUpdate, 'form data user di action')
         axios({
             method: "PATCH",
             url: `http://localhost:3289/api/v1/users/${id}`,
-            data: formData
-        })
-        .then ((res) => {
-            dispatch(UpdateUserSuccess(res.data))
-            console.log(res.data)
-        })
-        .catch((err)=> {
-            dispatch(UpdateUserError(err.response.data))
-        })
+            data: formUpdate
+            
+            // {
+            //     account_email: formUpdate.account_email,
+            //     account_password: formUpdate.account_password,
+            //     profile_about: formUpdate.profile_about,
+            //     profile_job: formUpdate.profile_job,
+            //     profile_name: formUpdate.profile_name,
+            //     profile_picture: formUpdate.profile_image,
+            //     profile_username: formUpdate.profile_username
+            // }
+        }).then((res) => {
+                dispatch(UpdateUserSuccess(res.data))
+                console.log(res.data, 'cek isi succes di update')
+            })
+            .catch((err) => {
+                dispatch(UpdateUserError(err.response.data))
+            })
     }
 }
 
