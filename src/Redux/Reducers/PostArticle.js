@@ -4,7 +4,7 @@ const initialState = {
 
     },
     error: null,
-    isUpdate: false
+    isWrite: false
 }
 
 const Fetch = (state=initialState, action={}) => {
@@ -12,9 +12,9 @@ const Fetch = (state=initialState, action={}) => {
         case "POST_ARTICLE_REQUEST":
             return {...state, loading: true}
         case "POST_ARTICLE_ERROR":
-            return {...state, loading: false, data: state.data, error: action.payload, isUpdate:false}
+            return {...state, loading: false, data: state.data, error: action.payload, isWrite:false}
         case "POST_ARTICLE_SUCCESS":
-            return {...state, loading: false, data:action.payload, error: null, isUpdate:true}            
+            return {...state, loading: false, data:action.payload, error: null, isWrite:true}            
         default:
             return state
     }

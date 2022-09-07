@@ -11,10 +11,14 @@ import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { PostArticle } from '../../Redux/Actions/Postingan'
+import Swal from 'sweetalert2'
 
 const WriteArticle = () => {
     const dispatch = useDispatch()
     const { data, error, loading, isLogin } = useSelector((state) => state.auth)
+    const write = useSelector((state)=> state.postArticle)
+    const [repatch, setRepatch] = useState(false)
+    console.log(write.data.status,'ini wirte data')
     const [formArticle, setFormArticle] = useState({
         'account_id': data.user_id,
         'post_cover': '',
@@ -23,15 +27,23 @@ const WriteArticle = () => {
         'post_fill': '',
     })
 
+
     const formData = new FormData()
     formData.append('account_id', data.user_id,)
     formData.append('post_cover', formArticle.post_cover)
     formData.append('post_title', formArticle.post_title)
     formData.append('post_category', formArticle.post_category)
     formData.append('post_fill', formArticle.post_fill)
-
+    console.log(formArticle.post_cover, 'ini form')
 
     // console.log(data.token)
+
+    
+    useEffect(() =>{
+        setFormArticle({
+            'post_title':''
+        })
+    }, [repatch])
 
 
     const HandlePostArticle = (e) => {
@@ -40,6 +52,37 @@ const WriteArticle = () => {
         console.log(formArticle, 'ini write')
         console.log(data.user_id)
         console.log(data.token)
+        console.log(write,'111')
+        if(formArticle.post_title === '' ||formArticle.post_cover === '' ||formArticle.post_category === '' ||formArticle.post_fill === '' ){
+           return Swal.fire({
+                icon: 'warning',
+                title: '',
+                text: 'field must be filled',
+            })
+
+        }
+        if(write.isWrite ===false){
+            return Swal.fire({
+                icon: 'error',
+                title: '',
+                text: write.error.message,
+            })
+         
+        }
+        else {
+            setRepatch(!repatch)
+            Swal.fire({
+                icon: 'success',
+                title: '',
+                text: write.data.message,
+            })
+        window.location.reload(false);
+         
+            
+        }
+
+
+       setRepatch(!repatch)
     }
 
     return (
@@ -61,13 +104,15 @@ const WriteArticle = () => {
                     <div className="flex flex-col justify-center ml-32">
                         <div className="w-48 h-72 bg-gray-200 outline-dashed border-[#388087] ">
                             <h1 className="text-center text-7xl my-20">+</h1>
+                            <img  src={formArticle.post_cover} width={100} height={200}/>
                         </div>
                         
                         <div className="flex flex-col">
+                            
                             {/* <button type='file' className="mt-4 inline-block w-48 font-['Mulish'] h-12 py-2.5 text-white font-bold text-base hover:text-white leading-tight  rounded-lg shadow-md hover:bg-[#7cbdc5] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#388087] active:shadow-lg transition duration-150 ease-in-out "> */}
                                <span className="btn btn-file mt-4 bg-[#388087]">
                                 {/* Choose Cover Photo */}
-                                Choose Cover Photo<input type="file" className="" onChange={(e) => setFormArticle((prevData) => ({
+                                Choose Cover Photo<input type="file" className="" required onChange={(e) => setFormArticle((prevData) => ({
                                     ...prevData,
                                     post_cover: e.target.files[0]
                                 }))} />
@@ -81,7 +126,7 @@ const WriteArticle = () => {
                     <div className="flex flex-col ml-10">
                         <div className="flex flex-row">
                             <input type="text"
-                                className="rounded-lg form-control border-[#388087] h-12 block w-96 px-4 py-2 text-lg text-left font-normal text-gray-700 bg-white  border border-solid focus:border-blue-600 focus:outline-none" placeholder="Article Tittle" onChange={(e) => setFormArticle((prevData) => ({
+                                className="rounded-lg form-control border-[#388087] h-12 block w-96 px-4 py-2 text-lg text-left font-normal text-gray-700 bg-white  border border-solid focus:border-blue-600 focus:outline-none" placeholder={formArticle.post_title  ? formArticle.post_title:'Article Tittle' } onChange={(e) => setFormArticle((prevData) => ({
                                     ...prevData,
                                     post_title: e.target.value
                                 }))} />
@@ -106,7 +151,7 @@ const WriteArticle = () => {
                             <img src={link} className="w-7 ml-6" alt='' />
                             <img src={scale} className="w-7 ml-6" alt='' />
                         </div>
-                        <textarea onChange={(e) => setFormArticle((prevData) => ({
+                        <textarea required onChange={(e) => setFormArticle((prevData) => ({
                             ...prevData,
                             post_fill: e.target.value
                         }))} className="border border-solid rounded-lg h-44 border-gray-600">
