@@ -35,7 +35,7 @@ export const AuthLogin = (formData) => {
                 dispatch(LoginSuccess(res.data.data))
             })
         .catch((err)=> {
-                dispatch(LoginError(alert(err.response.data)))
+                dispatch(LoginError(err.response.data))
                 })
                 // dispatch(LoginSuccess({
                 //     email: 'test@gmail.com',
@@ -89,7 +89,7 @@ export const AuthRegister = (formData) => {
                 console.log(formData, 'lalalala')
             })
         .catch((err)=> {
-                    dispatch(RegisterError(alert(err.response.data.message)))
+                    dispatch(RegisterError(err.response.data.message))
                 })
                 // dispatch(RegisterSuccess({
                 //     email: 'test@gmail.com',

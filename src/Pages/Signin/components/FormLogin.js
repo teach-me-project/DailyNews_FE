@@ -10,7 +10,7 @@ import { AuthLogin } from "../../../Redux/Actions/Auth"
 import Swal from 'sweetalert2'
 
 const FormLogin = () => {
-    const { data, error, loading, isLogin } = useSelector((state) => state.auth)
+    const login = useSelector((state) => state.auth)
     const dispatch = useDispatch()
     let navigate = useNavigate()
     const [formLogin, setFormLogin] = useState({
@@ -21,20 +21,40 @@ const FormLogin = () => {
     const handleLogin = (e) => {
         e.preventDefault()
         dispatch(AuthLogin(formLogin))
-    }
-
-    useEffect(() => {
-        if (isLogin === true) {
+        console.log(login, 'ini login')
+        if (login.isLogin === true) {
             Swal.fire({
                 icon: 'success',
                 title: '',
                 text: 'Login Success',
             })
             navigate('/', { replace: true })
-        } else {
-            navigate('/signin', {replace: true})
         }
-    }, [isLogin])
+        else {
+            Swal.fire({
+                icon: 'error',
+                title: '',
+                text: login.error.message,
+            })
+
+        }
+        // }else if(isLogin === false){
+        //     Swal.fire({
+        //         icon: 'error',
+        //         title: '',
+        //         text: 'Login gagal',
+        //     })
+        //     navigate('/signin', { replace: true })
+
+        // }
+    }
+
+    // useEffect(() => {
+    //     if (isLogin === true) {
+
+    //         navigate('/', { replace: true })
+    //     } 
+    // }, [isLogin])
 
 
     return (

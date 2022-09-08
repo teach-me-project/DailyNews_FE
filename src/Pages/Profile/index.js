@@ -46,7 +46,7 @@ const Profile = () => {
     const HandleUpdateUser = (e) => {
         e.preventDefault()
         dispatch(UpdateUser(formData, data.user_id))
-        if (Update?.data?.status === 200) {
+        if (Update.data.status === 200) {
             Swal.fire({
                 icon: 'success',
                 title: '',
