@@ -25,7 +25,7 @@ export const AuthLogin = (formData) => {
         dispatch(LoginRequest())
         axios({
             method: "POST",
-            url: "http://localhost:3289/api/v1/auth/login",
+            url: "https://seahorse-app-cli76.ondigitalocean.app/api/v1/auth/login",
             data: {
                 email: formData.email,
                 password: formData.password
@@ -77,7 +77,7 @@ export const AuthRegister = (formData) => {
         dispatch(RegisterRequest())
         axios({
             method: "POST",
-            url: "http://localhost:3289/api/v1/auth/register",
+            url: "https://seahorse-app-cli76.ondigitalocean.app/api/v1/auth/register",
             data: {
                 email: formData.email,
                 password: formData.password,

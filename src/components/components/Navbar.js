@@ -88,7 +88,7 @@ const Navbar = () => {
 							<label tabindex='0' className='btn btn-ghost btn-circle avatar'>
 								<div className='w-10 rounded-full'>
 									<img
-										src={`http://localhost:3289/upload/${Users.data[0]?.profile_picture}`}
+										src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${Users.data[0]?.profile_picture}`}
 										alt=''
 									/>
 								</div>

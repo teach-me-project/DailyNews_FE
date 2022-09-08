@@ -25,7 +25,7 @@ export const GetUser = (id) => {
         dispatch(GetUserRequest())
         axios({
             method: "GET",
-            url: `http://localhost:3289/api/v1/users/${id}`,
+            url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/users/${id}`,
         })
             .then((res) => {
                 dispatch(GetUserSuccess(res.data.data))
@@ -68,7 +68,7 @@ export const UpdateUser = (formUpdate, id) => {
         console.log(formUpdate, 'form data user di action')
         axios({
             method: "PATCH",
-            url: `http://localhost:3289/api/v1/users/${id}`,
+            url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/users/${id}`,
             data: formUpdate
             
             // {

@@ -25,7 +25,7 @@ export const AddComment = (formData) => {
         dispatch(CommentRequest())
         axios({
             method: "POST",
-            url: "http://localhost:3289/api/v1/comment?post_id=6&profile_id=2",
+            url: "https://seahorse-app-cli76.ondigitalocean.app/api/v1/comment?post_id=6&profile_id=2",
             data: {
                 comment_message: formData.comment_message
             },

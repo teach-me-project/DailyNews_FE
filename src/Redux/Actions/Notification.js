@@ -27,7 +27,7 @@ export const GetNotification = (profile_id, token) => {
 		dispatch(GetNotificationRequest());
 		axios({
 			method: 'GET',
-			url: `http://localhost:3289/api/v1/notification?profile_id=${profile_id}`,
+			url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/notification?profile_id=${profile_id}`,
 			headers: {
 				token: token,
 			},

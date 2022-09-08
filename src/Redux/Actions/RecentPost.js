@@ -27,7 +27,7 @@ export const GetRecent = () => {
 		dispatch(GetRecentRequest());
 		axios({
 			method: 'GET',
-			url: 'http://localhost:3289/api/v1/post/accepted?limit=3&order_by=created_at&page=1&sort=DESC',
+			url: 'https://seahorse-app-cli76.ondigitalocean.app/api/v1/post/accepted?limit=3&order_by=created_at&page=1&sort=DESC',
 		})
 			.then((res) => {
 				dispatch(GetRecentSuccess(res.data.list.post));

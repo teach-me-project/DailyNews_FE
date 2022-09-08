@@ -219,7 +219,7 @@ const Home = () => {
 											<div className='flex flex-row mt-10'>
 												<img
 													className='w-80 h-60'
-													src={`http://localhost:3289/upload/${item.post_cover}`}
+													src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${item.post_cover}`}
 												/>
 												<div className='flex flex-col ml-10 w-[600px]'>
 													<h1 className='font-extrabold text-xl'>

@@ -30,7 +30,7 @@ export const GetPost = (params) => {
 		dispatch(GetPostRequest());
 		axios({
 			method: 'GET',
-			url: `http://localhost:3289/api/v1/post/accepted?limit=${limit ? `${limit}`:2}&page=${page}&order_by=${order_by ? `${order_by}`:`created_at`}&sort=${sort ? `${sort}`:`DESC`}`,
+			url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/post/accepted?limit=${limit ? `${limit}`:2}&page=${page}&order_by=${order_by ? `${order_by}`:`created_at`}&sort=${sort ? `${sort}`:`DESC`}`,
 		})
 			.then((res) => {
 				dispatch(GetPostSuccess(res.data.list.post));
@@ -77,7 +77,7 @@ export const PostArticle = (token, formArticle, profile_id) => {
 		console.log(profile_id, 'ini profile id action');
 		axios({
 			method: 'POST',
-			url: `http://localhost:3289/api/v1/post?profile_id=${profile_id}`,
+			url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/post?profile_id=${profile_id}`,
 			data: formArticle,
 			headers: {
 				token: token,
@@ -117,7 +117,7 @@ export const GetArticleByID = (id) => {
 		dispatch(GetArticleByIdRequest());
 		axios({
 			method: 'GET',
-			url: `http://localhost:3289/api/v1/post/id?post_id=${id}`,
+			url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/post/id?post_id=${id}`,
 		})
 			.then((res) => {
 				dispatch(GetArticleByIdSuccess(res.data));

@@ -73,12 +73,12 @@ const Profile = () => {
                         <div className="flex flex-row ml-3 mt-5 mr-1">
                             <div className="avatar">
                                 <div className="w-16 rounded-lg ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src={`http://localhost:3289/upload/${Users.data[0].profile_picture}`} />
+                                    <img src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${Users.data[0].profile_picture}`} />
                                 </div>
                             </div>
 
                             {/* <div className="flex flex-row h-20 w-20 rounded-[28px] bg-white border-blue-400 items-center justify-center border-2">
-                                <img src={`http://localhost:3289/upload/${Users.data.profile_picture}`} />
+                                <img src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${Users.data.profile_picture}`} />
                             </div> */}
                             <div className="flex flex-col ml-5">
                                 <p className="text-lg text-[#2D4379]">{Users.data[0].profile_username}</p>
@@ -159,7 +159,7 @@ const Profile = () => {
                             <div className="flex flex-row justify-center mt-28">
                                 <div className="avatar">
                                     <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                        <img src={`http://localhost:3289/upload/${Users.data[0].profile_picture}`} />
+                                        <img src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${Users.data[0].profile_picture}`} />
                                     </div>
                                 </div>
                             </div>

@@ -56,7 +56,7 @@ const ViewArticle = () => {
 
                     <div className="avatar">
                         <div className="w-72 rounded-lg ring ring-offset-base-100 ring-offset-1 border-2 border-black">
-                            <img src={`http://localhost:3289/upload/${dataArticle?.post_cover}`} />
+                            <img src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${dataArticle?.post_cover}`} />
                         </div>
                     </div>
                     {/* <div>

@@ -171,7 +171,7 @@ const WhatNew = () => {
 										<div className='flex flex-row mt-10'>
 											<img
 												className='w-80 h-60'
-												src={`http://localhost:3289/upload/${item.post_cover}`}
+												src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${item.post_cover}`}
 											/>
 											<div className='flex flex-col ml-10 w-[600px]'>
 												<h1 className='font-extrabold text-xl'>
@@ -246,7 +246,7 @@ const WhatNew = () => {
 												<Link to={`/viewArticle/${item.post_id}`}>
 													<div className='flex flex-row mt-10'>
 														<div className='w-22'>
-															<img className='w-40 h-28' src={`http://localhost:3289/upload/${item.post_cover}`} />
+															<img className='w-40 h-28' src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${item.post_cover}`} />
 														</div>
 														<div className='flex flex-col ml-5 w-44'>
 															<h1 className='font-extrabold text-xs'>
@@ -357,7 +357,7 @@ const WhatNew = () => {
 												<Link to={`/viewArticle/${item.post_id}`}>
 													<div className='flex flex-row mt-10'>
 														<div className='w-22'>
-															<img className='w-40 h-28' src={`http://localhost:3289/upload/${item.post_cover}`} />
+															<img className='w-40 h-28' src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${item.post_cover}`} />
 														</div>
 														<div className='flex flex-col ml-5 w-44'>
 															<h1 className='font-extrabold text-xs'>
