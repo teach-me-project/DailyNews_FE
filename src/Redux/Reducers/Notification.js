@@ -18,7 +18,32 @@ const initialState = {
 	error: null,
 	isLogin: true,
 };
+const initialStateDeleteNotif = {
+	data: {
+		message: '',
+		resultdeletenotification: [],
+	},
+};
 
+const FetchDelete = (state = initialStateDeleteNotif, action = {}) => {
+	switch (action.type) {
+		case 'DELETE_NOTIFICATION_REQUEST':
+			return { ...state, loading: true };
+		case 'DELETE_NOTIFICATION_ERROR':
+			return {
+				...state,
+				data: state.data,
+			};
+		case 'DELETE_NOTIFICATION_SUCCESS':
+			return {
+				...state,
+
+				data: action.payload,
+			};
+		default:
+			return state;
+	}
+};
 const Fetch = (state = initialState, action = {}) => {
 	console.log(action.payload, 'ini  action.payloadnya');
 	switch (action.type) {
@@ -45,4 +70,4 @@ const Fetch = (state = initialState, action = {}) => {
 	}
 };
 
-export default Fetch;
+export { Fetch, FetchDelete };

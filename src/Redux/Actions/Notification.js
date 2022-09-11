@@ -21,6 +21,25 @@ const GetNotificationError = (error) => {
 		payload: error,
 	};
 };
+const DeleteNotificationRequest = () => {
+	return {
+		type: 'DELETE_NOTIFICATION_REQUEST',
+	};
+};
+
+const DeleteNotificationSuccess = (data) => {
+	return {
+		type: 'DELETE_NOTIFICATION_SUCCESS',
+		payload: data,
+	};
+};
+
+const DeleteNotificationError = (error) => {
+	return {
+		type: 'DELETE_NOTIFICATION_ERROR',
+		payload: error,
+	};
+};
 
 export const GetNotification = (profile_id, token) => {
 	return (dispatch) => {
@@ -37,6 +56,28 @@ export const GetNotification = (profile_id, token) => {
 			})
 			.catch((err) => {
 				dispatch(GetNotificationError(err.response.data));
+			});
+		// dispatch(GetUserSuccess({
+		//     email: 'test@gmail.com',
+		//     password: 'test1'
+		// }))
+	};
+};
+export const DeleteNotification = (notification_id, profile_id, token) => {
+	return (dispatch) => {
+		dispatch(DeleteNotificationRequest());
+		axios({
+			method: 'DELETE',
+			url: `http://localhost:3289/api/v1/notification?notification_id=${notification_id}&profile_id=${profile_id}`,
+			headers: {
+				token: token,
+			},
+		})
+			.then((res) => {
+				dispatch(DeleteNotificationSuccess(res.data));
+			})
+			.catch((err) => {
+				dispatch(DeleteNotificationError(err.response.data));
 			});
 		// dispatch(GetUserSuccess({
 		//     email: 'test@gmail.com',
