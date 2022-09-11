@@ -8,7 +8,11 @@ import Filter from '../../components/images/Filter.svg';
 import Footer from '../../components/components/Footer';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { GetNotification } from '../../Redux/Actions/Notification';
+import {
+	GetNotification,
+	DeleteNotification,
+} from '../../Redux/Actions/Notification';
+import Swal from 'sweetalert2';
 
 const Notification = () => {
 	const dispatch = useDispatch();
@@ -17,7 +21,29 @@ const Notification = () => {
 	useEffect(() => {
 		dispatch(GetNotification(data.user_id, data.token));
 	}, []);
-	const handleDeleteNotif = (id) => {};
+	const handleDeleteNotif = (notification_id, profile_id) => {
+		Swal.fire({
+			title: 'Do you want to Delete This Notification?',
+			showDenyButton: true,
+
+			denyButtonText: 'Cancel',
+			confirmButtonText: 'Delete',
+			customClass: {
+				actions: 'my-actions',
+
+				confirmButton: 'order-2',
+				denyButton: 'order-3',
+			},
+		}).then((result) => {
+			if (result.isConfirmed) {
+				dispatch(DeleteNotification(notification_id, profile_id, data.token));
+				window.location.reload();
+				Swal.fire('Deleted!', '', 'success');
+			} else if (result.isDenied) {
+				Swal.fire('Canceled', '', 'error');
+			}
+		});
+	};
 	return (
 		<>
 			<Navbar />
@@ -65,9 +91,12 @@ const Notification = () => {
 											<br />
 										</div> */}
 										<button
-											className='btn btn-danger m-5'
+											className='btn btn-outline-danger  m-5'
 											onClick={() => {
-												handleDeleteNotif(item.id);
+												handleDeleteNotif(
+													item.notification_id,
+													item.target_profile_id
+												);
 											}}
 										>
 											Delete
