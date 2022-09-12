@@ -68,7 +68,7 @@ export const DeleteNotification = (notification_id, profile_id, token) => {
 		dispatch(DeleteNotificationRequest());
 		axios({
 			method: 'DELETE',
-			url: `http://localhost:3289/api/v1/notification?notification_id=${notification_id}&profile_id=${profile_id}`,
+			url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/notification?notification_id=${notification_id}&profile_id=${profile_id}`,
 			headers: {
 				token: token,
 			},

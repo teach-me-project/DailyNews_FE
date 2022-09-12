@@ -18,7 +18,9 @@ const Notification = () => {
 	const dispatch = useDispatch();
 	const { data, error, loading, isLogin } = useSelector((state) => state.auth);
 	const dataNotif = useSelector((state) => state.notification);
-	useEffect(() => {
+
+	const [refatch, setRefacth] = useState(false)
+ 	useEffect(() => {
 		dispatch(GetNotification(data.user_id, data.token));
 	}, []);
 	const handleDeleteNotif = (notification_id, profile_id) => {
@@ -42,6 +44,7 @@ const Notification = () => {
 			} else if (result.isDenied) {
 				Swal.fire('Canceled', '', 'error');
 			}
+			// setRefacth(!refatch)
 		});
 	};
 	return (
