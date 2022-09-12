@@ -39,7 +39,7 @@ const Notification = () => {
 		}).then((result) => {
 			if (result.isConfirmed) {
 				dispatch(DeleteNotification(notification_id, profile_id, data.token));
-				window.location.reload();
+// 				window.location.reload();
 				Swal.fire('Deleted!', '', 'success');
 			} else if (result.isDenied) {
 				Swal.fire('Canceled', '', 'error');
