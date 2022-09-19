@@ -27,7 +27,7 @@ export const GetPopular = () => {
 		dispatch(GetPopularRequest());
 		axios({
 			method: 'GET',
-			url: 'process.env.URL_FE/api/v1/post/accepted?limit=3&order_by=like_count&page=1&sort=DESC',
+			url: `${process.env.REACT_APP_URL_BE}/api/v1/post/accepted?limit=3&order_by=like_count&page=1&sort=DESC`,
 		})
 			.then((res) => {
 				dispatch(GetPopularSuccess(res.data.list.post));

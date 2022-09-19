@@ -25,7 +25,7 @@ export const AddComment = (formData) => {
         dispatch(CommentRequest())
         axios({
             method: "POST",
-            url: "process.env.URL_FE/api/v1/comment?post_id=6&profile_id=2",
+            url: `${process.env.REACT_APP_URL_BE}/api/v1/comment?post_id=6&profile_id=2`,
             data: {
                 comment_message: formData.comment_message
             },

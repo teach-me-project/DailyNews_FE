@@ -56,7 +56,7 @@ const ViewArticle = () => {
 
                     <div className="avatar">
                         <div className="w-72 rounded-lg ring ring-offset-base-100 ring-offset-1 border-2 border-black">
-                            <img src={`process.env.URL_FE/upload/${dataArticle?.post_cover}`} />
+                            <img src={`${process.env.REACT_APP_URL_BE}/upload/${dataArticle?.post_cover}`} />
                         </div>
                     </div>
                     {/* <div>

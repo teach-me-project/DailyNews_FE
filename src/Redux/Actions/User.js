@@ -25,7 +25,7 @@ export const GetUser = (id) => {
         dispatch(GetUserRequest())
         axios({
             method: "GET",
-            url: `process.env.URL_FE/api/v1/users/${id}`,
+            url: `${process.env.REACT_APP_URL_BE}/api/v1/users/${id}`,
         })
             .then((res) => {
                 dispatch(GetUserSuccess(res.data.data))
@@ -68,7 +68,7 @@ export const UpdateUser = (formUpdate, id) => {
         console.log(formUpdate, 'form data user di action')
         axios({
             method: "PATCH",
-            url: `process.env.URL_FE/api/v1/users/${id}`,
+            url: `${process.env.REACT_APP_URL_BE}/api/v1/users/${id}`,
             data: formUpdate
             
             // {

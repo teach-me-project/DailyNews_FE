@@ -25,7 +25,7 @@ export const AuthLogin = (formData) => {
         dispatch(LoginRequest())
         axios({
             method: "POST",
-            url: "process.env.URL_FE/api/v1/auth/login",
+            url: `${process.env.REACT_APP_URL_BE}/api/v1/auth/login`,
             data: {
                 email: formData.email,
                 password: formData.password
@@ -77,7 +77,7 @@ export const AuthRegister = (formData) => {
         dispatch(RegisterRequest())
         axios({
             method: "POST",
-            url: "process.env.URL_FE/api/v1/auth/register",
+            url: `${process.env.REACT_APP_URL_BE}/api/v1/auth/login`,
             data: {
                 email: formData.email,
                 password: formData.password,

@@ -25,7 +25,7 @@ const LikeError = (error) => {
 //         dispatch(LikeRequest())
 //         axios({
 //             method: "POST",
-//             url: "process.env.URL_FE/api/v1/LIKE?post_id=6&profile_id=2",
+//             url: "process.env.REACT_APP_URL_BE/api/v1/LIKE?post_id=6&profile_id=2",
 //             data: {
 //                 like_message: formData.like_message
 //             },

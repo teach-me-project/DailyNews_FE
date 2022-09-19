@@ -88,7 +88,7 @@ const Navbar = () => {
 							<label tabindex='0' className='btn btn-ghost btn-circle avatar'>
 								<div className='w-10 rounded-full'>
 									<img
-										src={`process.env.URL_FE/upload/${Users.data[0]?.profile_picture}`}
+										src={`${process.env.REACT_APP_URL_BE}/upload/${Users.data[0]?.profile_picture}`}
 										alt=''
 									/>
 								</div>
