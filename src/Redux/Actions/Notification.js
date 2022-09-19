@@ -46,7 +46,7 @@ export const GetNotification = (profile_id, token) => {
 		dispatch(GetNotificationRequest());
 		axios({
 			method: 'GET',
-			url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/notification?profile_id=${profile_id}`,
+			url: `process.env.URL_FE/api/v1/notification?profile_id=${profile_id}`,
 			headers: {
 				token: token,
 			},
@@ -68,7 +68,7 @@ export const DeleteNotification = (notification_id, profile_id, token) => {
 		dispatch(DeleteNotificationRequest());
 		axios({
 			method: 'DELETE',
-			url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/notification?notification_id=${notification_id}&profile_id=${profile_id}`,
+			url: `process.env.URL_FE/api/v1/notification?notification_id=${notification_id}&profile_id=${profile_id}`,
 			headers: {
 				token: token,
 			},

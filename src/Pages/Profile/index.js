@@ -15,7 +15,8 @@ const Profile = () => {
     const { data, error, loading, isLogin } = useSelector((state) => state.auth)
     const Users = useSelector((state) => state.user)
     const Update = useSelector((state) => state.updateUser)
-    console.log(Update.data.status, 'cek data update di profile')
+    // console.log(Update.data.message, 'cek data success update di profile')
+    // console.log(Update.error.response.status, 'cek data update di profile')
     const [refatch, setRefatch] = useState(false)
     console.log(Users.data, 'data users ini')
 
@@ -42,15 +43,23 @@ const Profile = () => {
     formData.append('profile_email', formUpdate.profile_email);
     formData.append('profile_password', formUpdate.profile_password);
 
+
     const dispatch = useDispatch()
     const HandleUpdateUser = (e) => {
         e.preventDefault()
         dispatch(UpdateUser(formData, data.user_id))
+        
         if (Update.data.status === 200) {
             Swal.fire({
                 icon: 'success',
                 title: '',
                 text: Update.data.message,
+            })
+        } else if (Update.error?.response?.status === 400) {
+            Swal.fire({
+                icon: 'error',
+                title: '',
+                text: Update.error.response.data.message,
             })
         }
         setRefatch(!refatch)
@@ -73,12 +82,12 @@ const Profile = () => {
                         <div className="flex flex-row ml-3 mt-5 mr-1">
                             <div className="avatar">
                                 <div className="w-16 rounded-lg ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${Users.data[0].profile_picture}`} />
+                                    <img src={`process.env.URL_FE/upload/${Users.data[0].profile_picture}`} />
                                 </div>
                             </div>
 
                             {/* <div className="flex flex-row h-20 w-20 rounded-[28px] bg-white border-blue-400 items-center justify-center border-2">
-                                <img src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${Users.data.profile_picture}`} />
+                                <img src={`process.env.URL_FE/upload/${Users.data.profile_picture}`} />
                             </div> */}
                             <div className="flex flex-col ml-5">
                                 <p className="text-lg text-[#2D4379]">{Users.data[0].profile_username}</p>
@@ -159,7 +168,7 @@ const Profile = () => {
                             <div className="flex flex-row justify-center mt-28">
                                 <div className="avatar">
                                     <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                        <img src={`https://seahorse-app-cli76.ondigitalocean.app/upload/${Users.data[0].profile_picture}`} />
+                                        <img src={`process.env.URL_FE/upload/${Users.data[0].profile_picture}`} />
                                     </div>
                                 </div>
                             </div>

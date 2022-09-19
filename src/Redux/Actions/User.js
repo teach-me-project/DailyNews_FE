@@ -25,7 +25,7 @@ export const GetUser = (id) => {
         dispatch(GetUserRequest())
         axios({
             method: "GET",
-            url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/users/${id}`,
+            url: `process.env.URL_FE/api/v1/users/${id}`,
         })
             .then((res) => {
                 dispatch(GetUserSuccess(res.data.data))
@@ -68,7 +68,7 @@ export const UpdateUser = (formUpdate, id) => {
         console.log(formUpdate, 'form data user di action')
         axios({
             method: "PATCH",
-            url: `https://seahorse-app-cli76.ondigitalocean.app/api/v1/users/${id}`,
+            url: `process.env.URL_FE/api/v1/users/${id}`,
             data: formUpdate
             
             // {
@@ -78,14 +78,15 @@ export const UpdateUser = (formUpdate, id) => {
             //     profile_job: formUpdate.profile_job,
             //     profile_name: formUpdate.profile_name,
             //     profile_picture: formUpdate.profile_image,
-            //     profile_username: formUpdate.profile_username
+            //     profile_username: formUpdate.profile_username8
             // }
         }).then((res) => {
                 dispatch(UpdateUserSuccess(res.data))
-                console.log(res.data, 'cek isi succes di update')
+                console.log(res, 'cek isi succes di update')
             })
             .catch((err) => {
-                dispatch(UpdateUserError(err.response.data))
+                dispatch(UpdateUserError(err))
+                console.log(err, 'cek isi error di update')
             })
     }
 }
