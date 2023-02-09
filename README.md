@@ -12,7 +12,7 @@
 # About :
   
 ---
-[![Netlify](https://daily-news-teach-me.netlify.app/)]()
+[Netlify](https://daily-news-teach-me.netlify.app/)
 ## Getting Started
   
 ### Prerequisites
